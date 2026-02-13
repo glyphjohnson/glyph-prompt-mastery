@@ -1,0 +1,1 @@
+[DEFAULT]\nclient_id = YOUR_REDDIT_CLIENT_ID\nclient_secret = YOUR_REDDIT_CLIENT_SECRET\nuser_agent = glyph-promo/1.0\nusername = YOUR_REDDIT_USERNAME\npassword = YOUR_REDDIT_PASSWORD
