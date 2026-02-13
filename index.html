@@ -3,344 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glyph Prompt Mastery | Futuristic AI Prompt Engineering for Ecom Domination</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="500+ Engineered AI Prompts. Passion-driven craft for SEO, Copy, Upsells & CS. Scale your store with precision prompting.">
     <style>
         :root {
-            --bg-dark: #0a0a0f;
-            --neon-blue: #00ffff;
-            --neon-purple: #ff00ff;
-            --neon-cyan: #00ffea;
-            --gray-100: #e0e0e0;
-            --gray-200: #b0b0b0;
-            --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #1a0a2a 40%, #0a0f2a 100%);
-            --gradient-card: linear-gradient(145deg, rgba(26,26,42,0.8), rgba(15,15,26,0.9));
-            --shadow-neon: 0 0 20px rgba(0,255,255,0.3), 0 10px 40px rgba(0,0,0,0.5);
-            --shadow-3d: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,255,255,0.1);
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --border: #404040;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background: var(--bg-dark); 
-            color: var(--gray-100); 
-            line-height: 1.5; 
-            overflow-x: hidden;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1, h2, h3 { 
-            font-family: 'Orbitron', monospace; 
-            letter-spacing: 0.05em; 
-            text-transform: uppercase;
-            text-shadow: 0 0 10px var(--neon-blue);
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 400;
         }
-        h1 { font-weight: 900; font-size: clamp(3rem, 8vw, 7rem); }
-        h2 { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 3rem); }
-        h3 { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1.5rem; }
-        .neon-glow { 
-            color: var(--neon-blue); 
-            text-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 50px var(--neon-purple);
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
         }
-        .btn { 
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
-            color: #000;
-            text-decoration: none;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 700;
-            border-radius: 0;
-            box-shadow: var(--shadow-neon);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
         }
-        .btn:hover { 
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 0 30px var(--neon-blue), 0 15px 50px rgba(0,0,0,0.6);
+        h2 {
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
         }
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
         }
-        .btn:hover::before { left: 100%; }
-        section { padding: 1rem 1.5rem; position: relative; }
-        @media (min-width: 768px) { section { padding: 1.5rem 3rem; } }
-        .hero { 
-            min-height: 100vh; 
-            background: var(--gradient-hero);
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        .hero {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1.25rem;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: var(--accent-blue);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
-        @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .hero h1 { 
-            position: absolute; 
-            top: 15%; 
-            left: 5%; 
-            z-index: 3;
+        .btn:hover {
+            background: var(--accent-blue-dark);
         }
-        .hero .story { 
-            position: absolute; 
-            bottom: 25%; 
-            left: 5%; 
-            right: 40%; 
-            max-width: 500px;
-            font-size: 1.3rem;
-            font-weight: 300;
-            z-index: 3;
+        .card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
         }
-        .hero .cta { 
-            position: absolute; 
-            bottom: 10%; 
-            right: 5%; 
-            z-index: 3;
-            font-size: 1.2rem;
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin: 1rem 0;
         }
-        .features { 
-            margin-top: -15vh; 
-            z-index: 2; 
-            background: rgba(10,10,15,0.8);
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
         }
-        .cards-container { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 1.5rem; 
-            max-width: 1200px; 
-            margin: 0 auto;
+        ul li {
+            padding: 0.25rem 0;
         }
-        .card { 
-            background: var(--gradient-card); 
-            padding: 1.5rem; 
-            border-radius: 15px; 
-            box-shadow: var(--shadow-3d); 
-            border: 1px solid rgba(0,255,255,0.2);
-            position: relative;
-            transition: all 0.4s ease;
-            backdrop-filter: blur(10px);
-        }
-        .card:hover {
-            transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
-            box-shadow: 0 25px 50px rgba(0,255,255,0.2), inset 0 0 30px rgba(0,255,255,0.15);
-        }
-        .cards-container .card:nth-child(odd) { 
-            align-self: flex-start; 
-            margin-left: 15%; 
-            transform: rotate(-3deg);
-        }
-        .cards-container .card:nth-child(even) { 
-            align-self: flex-end; 
-            margin-right: 15%; 
-            transform: rotate(3deg);
-        }
-        .packs { background: rgba(26,10,42,0.7); }
-        .samples, .testimonials { background: rgba(10,15,26,0.8); }
-        .prompt-sample { 
-            background: rgba(0,0,0,0.5); 
-            border: 1px solid var(--neon-cyan); 
-            border-radius: 8px; 
-            padding: 1rem; 
-            font-family: 'Courier New', monospace; 
-            font-size: 0.9rem; 
-            white-space: pre-wrap; 
+        .prompt-sample {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.875rem;
+            white-space: pre-wrap;
             overflow-x: auto;
-            box-shadow: inset 0 0 10px rgba(0,255,234,0.2);
+            margin: 1rem 0;
         }
-        .stars { color: var(--neon-yellow, #ffff00); font-size: 1.5rem; }
-        dl { max-width: 900px; margin: 2rem auto; }
-        dt { 
-            background: var(--gradient-card); 
-            padding: 1rem 1.5rem; 
-            margin: 1rem 0; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            border-left: 4px solid var(--neon-blue);
-            box-shadow: var(--shadow-neon);
+        details {
+            margin-bottom: 1rem;
         }
-        dd { 
-            margin-left: 2rem; 
-            background: rgba(0,0,0,0.4); 
-            padding: 1.5rem; 
-            border-radius: 10px;
+        summary {
+            cursor: pointer;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 0.5rem;
+            font-weight: 500;
         }
-        footer { 
-            text-align: center; 
-            padding: 2rem; 
-            background: rgba(0,0,0,0.5); 
-            border-top: 1px solid rgba(0,255,255,0.2);
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
-        .nav { 
-            position: fixed; 
-            top: 2rem; 
-            left: 2rem; 
-            z-index: 100; 
-            background: rgba(10,10,15,0.9); 
-            padding: 1rem; 
-            border: 1px solid var(--neon-blue); 
-            border-radius: 10px; 
-            box-shadow: var(--shadow-neon);
+        .faq-answer {
+            padding: 1rem 1rem 1.25rem;
+            background: var(--bg-primary);
+            border-radius: 0 0 0.5rem 0.5rem;
         }
-        .nav a { color: var(--neon-blue); text-decoration: none; display: block; margin: 0.25rem 0; font-family: Rajdhani; }
-        .twitter-timeline { border: none !important; }
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 26, 26, 0.95);
+            border-bottom: 1px solid var(--border);
+            z-index: 10;
+        }
+        nav {
+            padding: 1rem 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        form {
+            margin-top: 1rem;
+        }
+        form input[type="submit"] {
+            width: 100%;
+            padding: 0.875rem;
+            font-size: 1rem;
+        }
         @media (max-width: 768px) {
-            .hero h1 { left: 2%; top: 10%; }
-            .hero .story { left: 2%; right: 2%; bottom: 30%; }
-            .hero .cta { right: 2%; bottom: 10%; font-size: 1rem; }
-            .cards-container .card:nth-child(odd), .cards-container .card:nth-child(even) { margin: 0 !important; transform: none; }
-            section { padding: 1rem; }
+            .container {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">Founder</a>
-        <a href="seo.html">SEO Pack</a>
-        <a href="copy.html">Copy Pack</a>
-        <a href="upsell.html">Upsell Pack</a>
-        <a href="cs.html">CS Pack</a>
-    </nav>
-    <section class="hero">
-        <h1 class="neon-glow">Glyph<br>Prompt<br>Mastery</h1>
-        <div class="story">
-            <p><strong>Passioneret founder:</strong> Prompting as digital craft. I've spent years honing the art of AI prompts that drive real ecom growth. This is my digital craftsmanship – engineered from data-driven wins, now yours to wield.</p>
-        </div>
-        <a href="#packs" class="btn cta">Forge Your Edge →</a>
-    </section>
-    <section class="features">
-        <h2 class="neon-glow">Power Sectors</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>🔍 SEO Mastery</h3>
-                <p>150+ prompts to dominate search. Google, Etsy, Shopify – rank #1.</p>
-                <a href="pdf-gen/seo-pack.pdf" download class="btn">Download PDF</a>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Founder</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li><a href="copy.html">Copy</a></li>
+                <li><a href="upsell.html">Upsell</a></li>
+                <li><a href="cs.html">CS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1>Glyph Prompt Mastery</h1>
+                <div>
+                    <p>Passion-driven prompting as digital craft. Years honing AI prompts for real ecom growth—SEO domination, killer copy, upsell boosts, CS automation. Engineered precision, now yours.</p>
+                </div>
+                <a href="#products" class="btn">Explore Packs</a>
             </div>
+        </section>
+
+        <section id="products" class="container">
+            <h2>Products</h2>
             <div class="card">
-                <h3>✍️ Copy Pro</h3>
-                <p>100+ for product desc, emails, ads. Convert browsers to buyers.</p>
-                <a href="pdf-gen/copy-pack.pdf" download class="btn">Download PDF</a>
-            </div>
-            <div class="card">
-                <h3>💰 Upsell Genius</h3>
-                <p>120+ bundles, post-purchase, carts. Boost AOV instantly.</p>
-                <a href="pdf-gen/upsell-pack.pdf" download class="btn">Download PDF</a>
-            </div>
-            <div class="card">
-                <h3>🛡️ CS AI</h3>
-                <p>130+ replies, refunds, loyalty. Scale support without burnout.</p>
-                <a href="pdf-gen/cs-pack.pdf" download class="btn">Download PDF</a>
-            </div>
-        </div>
-    </section>
-    <section class="packs" id="packs">
-        <h2 class="neon-glow">Acquire Packs</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>Starter</h3>
-                <div style="font-size: 3rem; font-weight: 900; color: var(--neon-cyan); margin: 0.5rem 0;">$10</div>
-                <ul style="list-style: none; padding: 0;">
-                    <li>• 100 SEO + 50 Copy</li>
+                <h3>Starter Pack</h3>
+                <div class="price">$10</div>
+                <ul>
+                    <li>100+ SEO Prompts</li>
+                    <li>50+ Copy Prompts</li>
                 </ul>
-                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-top: 1rem;">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="boyisak@gmail.com">
-                    <input type="hidden" name="item_name" value="Starter Pack">
+                    <input type="hidden" name="item_name" value="Glyph Starter Pack">
                     <input type="hidden" name="amount" value="10.00">
                     <input type="hidden" name="currency_code" value="USD">
-                    <input type="submit" value="Acquire Starter" class="btn">
+                    <input type="submit" value="Buy Starter Pack" class="btn">
                 </form>
             </div>
             <div class="card">
-                <h3>🌟 Mega Pack</h3>
-                <div style="font-size: 3.5rem; font-weight: 900; color: var(--neon-purple); margin: 0.5rem 0;">$12.99</div>
-                <p>500+ All-In</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li>• Full Arsenal</li>
-                    <li>• Lifetime Access</li>
+                <h3>Mega Pack</h3>
+                <div class="price">$12.99</div>
+                <p>500+ prompts across all categories. Full arsenal, lifetime access.</p>
+                <ul>
+                    <li>SEO, Copy, Upsell, CS</li>
+                    <li>Instant PDF delivery</li>
                 </ul>
-                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-top: 1rem;">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="boyisak@gmail.com">
-                    <input type="hidden" name="item_name" value="Mega Pack">
+                    <input type="hidden" name="item_name" value="Glyph Mega Pack">
                     <input type="hidden" name="amount" value="12.99">
                     <input type="hidden" name="currency_code" value="USD">
-                    <input type="submit" value="Acquire Mega" class="btn">
+                    <input type="submit" value="Buy Mega Pack" class="btn">
                 </form>
             </div>
             <div class="card">
-                <h3>Pro</h3>
-                <div style="font-size: 3rem; font-weight: 900; color: var(--neon-blue); margin: 0.5rem 0;">$19.99</div>
-                <p>Coming Soon</p>
+                <h3>Pro Pack</h3>
+                <div class="price">$19.99</div>
+                <p>Coming soon. Advanced prompts + custom support.</p>
                 <a href="#" class="btn">Notify Me</a>
             </div>
-        </div>
-    </section>
-    <section class="samples">
-        <h2 class="neon-glow">Prompt Previews</h2>
-        <div class="cards-container">
+        </section>
+
+        <section class="testimonials container">
+            <h2>Testimonials</h2>
             <div class="card">
-                <h3>SEO Example</h3>
-                <div class="prompt-sample">Generate 5 SEO-optimized meta titles and descriptions for handmade leather wallets. Keywords: "handmade leather wallets". Under 60/160 chars. Emojis. Drive clicks.</div>
+                <p>"Etsy traffic doubled in weeks."</p>
+                <strong>— Sarah K.</strong>
             </div>
             <div class="card">
-                <h3>Copy Example</h3>
-                <div class="prompt-sample">Write Shopify desc for wireless earbuds. Battery 30h, ANC, IPX7, $49.99. AIDA, bullets, urgency for fitness fans.</div>
+                <p>"Shopify growth 300% with copy and upsells."</p>
+                <strong>— Mike R.</strong>
             </div>
             <div class="card">
-                <h3>Upsell Example</h3>
-                <div class="prompt-sample">Post-purchase upsell email for mugs. Coasters bundle 20% off. Scarcity, social proof, one-click.</div>
+                <p>"CS retention up 40%, more time for creation."</p>
+                <strong>— Lisa T.</strong>
             </div>
-        </div>
-    </section>
-    <section class="testimonials">
-        <h2 class="neon-glow">Store Owners Speak</h2>
-        <div class="cards-container">
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p>Etsy traffic doubled in weeks.</p>
-                <strong>- Sarah K.</strong>
-            </div>
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p>Shopify growth 300% with copy/upsells.</p>
-                <strong>- Mike R.</strong>
-            </div>
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p>CS retention +40%, more creation time.</p>
-                <strong>- Lisa T.</strong>
-            </div>
-        </div>
-    </section>
-    <section id="faq">
-        <h2 class="neon-glow">Queries</h2>
-        <dl>
-            <dt>What AIs?</dt>
-            <dd>ChatGPT, Claude, Grok – copy-paste ready.</dd>
-            <dt>Delivery?</dt>
-            <dd>Instant PDF/TXT post-PayPal.</dd>
-            <dt>Refund?</dt>
-            <dd>30-day no-questions.</dd>
-            <dt>Updates?</dt>
-            <dd>Lifetime free.</dd>
-        </dl>
-    </section>
-    <footer>
+        </section>
+
+        <section class="faq container">
+            <h2>FAQ</h2>
+            <details>
+                <summary>What AIs work with these?</summary>
+                <div class="faq-answer">ChatGPT, Claude, Grok—copy-paste ready.</div>
+            </details>
+            <details>
+                <summary>Delivery method?</summary>
+                <div class="faq-answer">Instant PDF/TXT via email after PayPal.</div>
+            </details>
+            <details>
+                <summary>Refund policy?</summary>
+                <div class="faq-answer">30-day no-questions-asked.</div>
+            </details>
+            <details>
+                <summary>Updates included?</summary>
+                <div class="faq-answer">Lifetime free updates.</div>
+            </details>
+        </section>
+
+        <section class="cta container">
+            <h2>Ready to Master Prompts?</h2>
+            <p>Scale your store with precision-engineered AI. Start today.</p>
+            <a href="#products" class="btn">Get Started</a>
+        </section>
+    </main>
+
+    <footer class="container">
         <p>&copy; 2026 Glyph Prompt Mastery. Crafted with passion.</p>
     </footer>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
