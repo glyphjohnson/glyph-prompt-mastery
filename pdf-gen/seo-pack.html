@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>seo-pack</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#lokke-seo-titles-meta-pack"
+id="toc-lokke-seo-titles-meta-pack">Lokke SEO Titles &amp; Meta
+Pack</a></li>
+<li><a href="#table-of-contents" id="toc-table-of-contents">Table of
+Contents</a>
+<ul>
+<li><a href="#welcome" id="toc-welcome">Velkommen / Welcome</a></li>
+<li><a href="#benefits" id="toc-benefits">Fordele / Benefits</a>
+<ul>
+<li><a href="#benefits-engelsk" id="toc-benefits-engelsk">Benefits
+(Engelsk)</a></li>
+<li><a href="#fordele-dansk" id="toc-fordele-dansk">Fordele
+(Dansk)</a></li>
+</ul></li>
+<li><a href="#how-to-use" id="toc-how-to-use">Sådan Bruges / How to
+Use</a></li>
+<li><a href="#titles" id="toc-titles">SEO Title Prompts (20+)</a></li>
+<li><a href="#metas" id="toc-metas">Meta Description Prompts
+(15+)</a></li>
+<li><a href="#alt" id="toc-alt">Alt Text &amp; Image SEO (5+)</a></li>
+<li><a href="#schema" id="toc-schema">Schema &amp; Structured Data
+(5+)</a></li>
+<li><a href="#product-blog" id="toc-product-blog">Product Page &amp;
+Blog SEO (10+)</a></li>
+<li><a href="#examples" id="toc-examples">Eksempler / Examples</a></li>
+<li><a href="#tips" id="toc-tips">Tips &amp; Best Practices
+(20+)</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#mega-pack" id="toc-mega-pack">Opgrader til Mega Pack! /
+Upgrade to Mega Pack!</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="lokke-seo-titles-meta-pack">Lokke SEO Titles &amp; Meta
+Pack</h1>
+<p><strong>Ultimate AI Prompt Library for E-Commerce SEO
+Mastery</strong></p>
+<p><strong>50+ Pro Prompts, Templates, Examples &amp; Tips | Equivalent
+to 50+ Printed Pages</strong><br />
+<strong>Compiled &amp; Expanded for Lokke.ai – E-Commerce
+Edition</strong><br />
+<strong>Version 2.0 | February 13, 2026</strong><br />
+<strong>PDF-Ready:
+<code>pandoc seo-pack.md -o seo-pack.pdf --toc -V geometry:margin=1in</code></strong></p>
+<hr />
+<figure>
+<img
+src=""
+alt="Lokke SEO Mega Banner" />
+<figcaption aria-hidden="true">Lokke SEO Mega Banner</figcaption>
+</figure>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#welcome">Velkommen / Welcome</a></li>
+<li><a href="#benefits">Fordele / Benefits</a></li>
+<li><a href="#how-to-use">Sådan Bruges / How to Use</a></li>
+<li><a href="#titles">SEO Title Prompts (20+)</a></li>
+<li><a href="#metas">Meta Description Prompts (15+)</a></li>
+<li><a href="#alt">Alt Text &amp; Image SEO (5+)</a></li>
+<li><a href="#schema">Schema &amp; Structured Data (5+)</a></li>
+<li><a href="#product-blog">Product Page &amp; Blog SEO (10+)</a></li>
+<li><a href="#examples">Eksempler / Examples</a></li>
+<li><a href="#tips">Tips &amp; Best Practices (20+)</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#mega-pack">Opgrader til Mega Pack! / Upgrade to Mega
+Pack!</a></li>
+</ul>
+<h2 id="welcome">Velkommen / Welcome</h2>
+<p><strong>Dansk:</strong> Mestre e-handels SEO med 50+ AI-prompts til
+titler, metas, alt-tekster og mere. Boost din placering på Google, øg
+klikraten med 30%+ og skalér til tusindvis af produkter!<br />
+<strong>English:</strong> Master e-commerce SEO with 50+ AI prompts for
+titles, metas, alt texts, and more. Skyrocket Google rankings, boost CTR
+by 30%+, and scale to thousands of products!</p>
+<p>Denne pakke er specielt til e-com niches som fashion, electronics,
+beauty, home &amp; garden.</p>
+<h2 id="benefits">Fordele / Benefits</h2>
+<h3 id="benefits-engelsk">Benefits (Engelsk)</h3>
+<ol type="1">
+<li><strong>30-50% CTR Increase</strong> – Front-loaded keywords drive
+clicks.</li>
+<li><strong>Top 3 Google Positions</strong> – Optimized for e-com
+competition.</li>
+<li><strong>Scale to 10,000+ Products</strong> – Instant variants.</li>
+<li><strong>Save 20+ Hours/Week</strong> – AI generates in seconds.</li>
+<li><strong>A/B Test Ready</strong> – 10 variants per product.</li>
+<li><strong>Mobile-First</strong> – Titles under 60 chars.</li>
+<li><strong>Long-Tail Magic</strong> – Capture niche traffic.</li>
+<li><strong>Emoji Boost</strong> (Social SEO) – Higher engagement.</li>
+<li><strong>Seasonal Power</strong> – Holiday sales spikes.</li>
+<li><strong>Competitor Crush</strong> – ‘Best’, ‘Top’, ‘Vs’
+phrasing.</li>
+<li><strong>Conversion-Optimized</strong> – Urgency + Benefits.</li>
+<li><strong>Schema-Ready</strong> – Rich snippets.</li>
+<li><strong>Multilingual</strong> – Global e-com.</li>
+<li><strong>Voice Search</strong> – Question-style titles.</li>
+<li><strong>Local SEO</strong> – ‘Buy [City]’.</li>
+</ol>
+<h3 id="fordele-dansk">Fordele (Dansk)</h3>
+<ol type="1">
+<li><strong>30-50% Øget Klikrate</strong> – Front-loaded keywords.</li>
+<li><strong>Top 3 Google Positioner</strong> – Optimeret til e-com.
+<em>(Oversæt alle 15…)</em></li>
+</ol>
+<h2 id="how-to-use">Sådan Bruges / How to Use</h2>
+<p><strong>Dansk:</strong> Erstat [PRODUCT], [KW] etc. med dine data.
+Brug ChatGPT/Claude/Grok. Generér 5-10 varianter pr. produkt.<br />
+<strong>English:</strong> Replace [brackets] with your data. Use in
+ChatGPT/Claude/Grok. Generate 5-10 variants per product. Test with
+Google Search Console.</p>
+<p><strong>RCET Framework:</strong> Role (You are SEO expert), Context
+(E-com product), Expectations (10 titles &lt;60 chars), Task
+(Generate).</p>
+<h2 id="titles">SEO Title Prompts (20+)</h2>
+<pre><code>1. &quot;You are a top e-com SEO expert. Generate 10 SEO-optimized titles for [PRODUCT NAME], under 60 characters, front-load [MAIN KEYWORD], include [SECONDARY KEYWORDS: list]. Power words: Best, Ultimate, Pro.&quot;
+
+2. &quot;Create 8 compelling, urgency-driven SEO titles for [PRODUCT] on sale, KW: [MAIN KW]. Include &#39;Limited Time&#39;, &#39;50% Off&#39;.&quot;
+
+3. &quot;10 feature-focused SEO titles for [PRODUCT] highlighting [KEY FEATURE e.g. Waterproof], KW [LIST].&quot;
+
+4. &quot;Benefit-driven titles: Generate 10 for [PRODUCT], emphasize [BENEFITS e.g. Save Time, Durable], SEO KW front-loaded.&quot;
+
+5. &quot;Question-style SEO titles for [PRODUCT], 10 variants, e.g. &#39;Best [KW] for [Need]?&#39;&quot;
+
+6. &quot;Numbered list titles: &#39;Top 10 [PRODUCT] for [KW]&#39;, 10 ideas.&quot;
+
+7. &quot;Social proof SEO titles: &#39;Best-Selling [PRODUCT] - 5-Star Reviews&#39;, 10 optimized.&quot;
+
+8. &quot;Seasonal/Holiday: 10 SEO titles for [PRODUCT] for [EVENT e.g. Black Friday], KW [KW].&quot;
+
+9. &quot;&#39;Vs Competitor&#39; comparison titles for [PRODUCT vs [COMPETITOR]], 10 SEO.&quot;
+
+10. &quot;Long-tail KW titles for niche e-com: [LONG-TAIL KW], 10 for [PRODUCT].&quot;
+
+11. &quot;Emoji-enhanced titles for Pinterest/Instagram SEO: [PRODUCT] ✨, 10.&quot;
+
+12. &quot;Local SEO: &#39;Buy [PRODUCT] in [CITY]&#39;, 10 titles.&quot;
+
+13. &quot;Voice search optimized: Natural question titles for [PRODUCT].&quot;
+
+14. &quot;Luxury tone: Premium SEO titles for high-end [PRODUCT].&quot;
+
+15. &quot;Budget-friendly: &#39;Affordable [PRODUCT] Under $50&#39;, 10.&quot;
+
+16. &quot;Bundle deals: &#39; [PRODUCT] + Free Gift - SEO Title&#39;.&quot;
+
+17. &quot;Eco-friendly: Green SEO titles for sustainable [PRODUCT].&quot;
+
+18. &quot;Fast shipping: &#39;Same-Day Delivery [PRODUCT]&#39; titles.&quot;
+
+19. &quot;Warranty-focused: &#39;Lifetime Warranty [PRODUCT]&#39; SEO.&quot;
+
+20. &quot;New arrival: &#39;Just Launched [PRODUCT] 2026&#39; titles.&quot;
+
+21+. *(More variations: Pain-point, How-to, etc.)*</code></pre>
+<h2 id="metas">Meta Description Prompts (15+)</h2>
+<pre><code>1. &quot;10 meta descriptions (155 chars max) for [PRODUCT]: Hook + Benefits + CTA + KW [MAIN]. E.g. &#39;Discover the best [KW]. Feature X. Buy now!&#39;&quot;
+
+2. &quot;Urgency metas: &#39;Limited stock [PRODUCT]! Save 20%. KW [KW]. Shop today.&#39; 10 variants.&quot;
+
+*(13 more: Feature, Benefit, Testimonial, Emoji, Long-tail, etc.)*</code></pre>
+<h2 id="alt">Alt Text &amp; Image SEO (5+)</h2>
+<pre><code>1. &quot;Generate 10 descriptive alt texts for [IMAGE of PRODUCT], include KW [KW], 100 chars max, accessible.&quot;
+
+*(4 more)*</code></pre>
+<h2 id="schema">Schema &amp; Structured Data (5+)</h2>
+<pre><code>1. &quot;JSON-LD schema for Product: [PRODUCT details], optimized for rich snippets.&quot;</code></pre>
+<h2 id="product-blog">Product Page &amp; Blog SEO (10+)</h2>
+<pre><code>1. &quot;Full H1-H6 structure for [PRODUCT PAGE], SEO optimized.&quot;</code></pre>
+<h2 id="examples">Eksempler / Examples</h2>
+<p><strong>Example 1: Wireless Earbuds</strong><br />
+Input: Product: Wireless Earbuds, KW: best wireless earbuds under
+50<br />
+Output from Prompt 1:<br />
+1. Best Wireless Earbuds Under $50 - Noise Cancelling<br />
+<em>(9 more…)</em></p>
+<p><em>(4 more examples: Fashion dress, Beauty cream, Home gadget,
+Electronics phone case)</em></p>
+<h2 id="tips">Tips &amp; Best Practices (20+)</h2>
+<ol type="1">
+<li>Always front-load primary KW (60% rule).<br />
+</li>
+<li>Use power words: Ultimate, Epic, Proven.<br />
+</li>
+<li>A/B test 3 titles per product.<br />
+<em>(18 more: Tools, Metrics, Common mistakes, Mobile preview,
+etc.)</em></li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li>Q: Can I resell? A: No, personal use.<br />
+<em>(5+ FAQs)</em></li>
+</ul>
+<h2 id="mega-pack">Opgrader til Mega Pack! / Upgrade to Mega Pack!</h2>
+<p><strong>Dansk:</strong> Vil du have 500+ prompts, templates for alle
+e-com områder + video guides? Køb Mega Pack nu!<br />
+<strong>Kun 97€ – PayPal:</strong> <a
+href="https://www.paypal.com/ncp/payment/LokkeAIMegaPack">Køb Nu</a></p>
+<p><strong>English:</strong> Unlock 500+ prompts, full e-com SEO suite,
+video tutorials. One-time 97€ via PayPal!<br />
+<a href="https://www.paypal.com/ncp/payment/LokkeAIMegaPack">Buy Mega
+Pack Now</a> – Instant download!</p>
+<p><strong>Why Upgrade?</strong> This pack is a teaser. Mega Pack = 10x
+value, lifetime updates.</p>
+<hr />
+<p><strong>© Lokke.ai 2026 | Kontakt: support@lokke.ai</strong><br />
+<strong>Terms: Educational use only.</strong></p>
+</body>
+</html>
