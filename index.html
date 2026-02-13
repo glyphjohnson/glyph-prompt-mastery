@@ -4,19 +4,266 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Prompt Mastery - 10x Your Shopify & Etsy Sales with AI</title>
-<!-- Google tag (gtag.js) - Replace G-MEASUREMENT_ID with your GA4 ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-MEASUREMENT_ID");
-</script>
-
     <meta name="description" content="Mega Pack $12.99: 500+ AI prompts for SEO, copywriting, upsells & customer service. Scale your store instantly – no coding needed!">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            overflow-x: hidden;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 3rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1920x1200/?futuristic,ecommerce,ai,shopify') center/cover no-repeat;
+            color: white;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        .hero-content p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(79, 172, 254, 0.5);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow);
+        }
+        .glass-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        .features-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #4facfe;
+        }
+        .featured {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+        }
+        .preview-section {
+            background: rgba(248,249,250,0.8);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+        }
+        .prompt-sample {
+            background: rgba(233,236,239,0.9);
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            border-left: 5px solid #4facfe;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .testimonial {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+        }
+        .stars {
+            color: #ffc107;
+            font-size: 1.5rem;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--primary-gradient);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer.active {
+            max-height: 200px;
+        }
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        /* Animations */
+        .animate {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .animate.fade-left {
+            transform: translateX(-60px);
+        }
+        .animate.fade-right {
+            transform: translateX(60px);
+        }
+        .animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: var(--shadow);
+                padding: 2rem 0;
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links li {
+                margin: 1.5rem 0;
+            }
+            section {
+                padding: 60px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -40,9 +287,9 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="animate fade-up">E-Commerce Prompt Mastery</h1>
-                <p class="animate fade-up" style="transition-delay: 0.2s;">Unlock 500+ battle-tested AI prompts to 10x your Shopify & Etsy sales. SEO, copywriting, upsells, customer service – all included in our Mega Pack for just $12.99!</p>
-                <a href="#packs" class="btn animate fade-up" style="transition-delay: 0.4s;">Grab Mega Pack Now</a>
+                <h1 class="animate">E-Commerce Prompt Mastery</h1>
+                <p class="animate" style="transition-delay: 0.2s;">Unlock 500+ battle-tested AI prompts to 10x your Shopify & Etsy sales. SEO, copywriting, upsells, customer service – all included in our Mega Pack for just $12.99!</p>
+                <a href="#packs" class="btn animate" style="transition-delay: 0.4s;">Grab Mega Pack Now</a>
             </div>
         </div>
     </section>
