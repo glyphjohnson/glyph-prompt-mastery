@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Glyph Prompt Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Paste the entire style block from index.html here */
+        :root {
+            --bg-dark: #0a0a0f;
+            --neon-blue: #00ffff;
+            --neon-purple: #ff00ff;
+            --neon-cyan: #00ffea;
+            --gray-100: #e0e0e0;
+            --gray-200: #b0b0b0;
+            --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #1a0a2a 40%, #0a0f2a 100%);
+            --gradient-card: linear-gradient(145deg, rgba(26,26,42,0.8), rgba(15,15,26,0.9));
+            --shadow-neon: 0 0 20px rgba(0,255,255,0.3), 0 10px 40px rgba(0,0,0,0.5);
+            --shadow-3d: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,255,255,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg-dark); 
+            color: var(--gray-100); 
+            line-height: 1.5; 
+            overflow-x: hidden;
+        }
+        h1, h2, h3 { 
+            font-family: 'Orbitron', monospace; 
+            letter-spacing: 0.05em; 
+            text-transform: uppercase;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+        h1 { font-weight: 900; font-size: clamp(3rem, 8vw, 7rem); }
+        h2 { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 3rem); }
+        .neon-glow { 
+            color: var(--neon-blue); 
+            text-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 50px var(--neon-purple);
+        }
+        section { padding: 1rem 1.5rem; position: relative; }
+        @media (min-width: 768px) { section { padding: 1.5rem 3rem; } }
+        .hero { 
+            min-height: 100vh; 
+            background: var(--gradient-hero);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .story { max-width: 700px; margin: 0 auto; padding: 2rem; font-size: 1.2rem; }
+        .nav { 
+            position: fixed; 
+            top: 2rem; 
+            left: 2rem; 
+            z-index: 100; 
+            background: rgba(10,10,15,0.9); 
+            padding: 1rem; 
+            border: 1px solid var(--neon-blue); 
+            border-radius: 10px; 
+            box-shadow: var(--shadow-neon);
+        }
+        .nav a { color: var(--neon-blue); text-decoration: none; display: block; margin: 0.25rem 0; font-family: Rajdhani; }
+        @media (max-width: 768px) { .nav { top: 1rem; left: 1rem; padding: 0.75rem; } }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">← Home</a>
+    </nav>
+    <section class="hero">
+        <h1 class="neon-glow">The Founder</h1>
+        <div class="story">
+            <p>Passioneret founder behind Glyph Prompt Mastery. Prompting isn't just code – it's digital craft. Years scaling ecom stores taught me the precise prompts that turn AI into a growth engine.</p>
+            <p>From SEO domination to CS automation, every prompt is battle-tested. No fluff, pure leverage. Join the craft.</p>
+        </div>
+    </section>
+</body>
+</html>
