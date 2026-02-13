@@ -1,474 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Prompt Mastery - 10x Your Shopify & Etsy Sales with AI</title>
-    <meta name="description" content="Mega Pack $12.99: 500+ AI prompts for SEO, copywriting, upsells & customer service. Scale your store instantly – no coding needed!">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Glyph Prompt Mastery - E-Commerce AI Prompts Mega Pack&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Mega Pack $12.99: 500+ AI prompts for SEO, copywriting, upsells &amp; customer service. Scale your Shopify &amp; Etsy sales instantly!&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;ecommerce ai prompts, shopify prompts, etsy ai, seo prompts, copywriting ai, prompt engineering ecom&quot;&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://glyphjohnson.github.io/glyph-prompt-mastery/&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;https://unpkg.com/aos@2.3.1/dist/aos.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;script src=&quot;https://unpkg.com/aos@2.3.1/dist/aos.js&quot;&gt;&lt;/script&gt;
+    &lt;style&gt;
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            overflow-x: hidden;
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; min-height: 100vh; }
+        #hero { 
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1570549717069-33bed2ebafec?ixlib=rb-4.0.3&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1920&amp;fit=crop'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
         }
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(20px);
-            z-index: 1000;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 70px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        .nav-links li {
-            margin-left: 2rem;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #667eea;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: #333;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        section {
-            padding: 80px 0;
-        }
-        .section-title {
-            text-align: center;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 3rem;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        #hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1920x1200/?futuristic,ecommerce,ai,shopify') center/cover no-repeat;
-            color: white;
-            text-align: center;
-        }
-        .hero-content h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-        .hero-content p {
-            font-size: 1.4rem;
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-            opacity: 0.95;
-        }
-        .btn {
-            display: inline-block;
-            padding: 1.2rem 3rem;
-            background: var(--accent-gradient);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow);
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(79, 172, 254, 0.5);
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-        .glass-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 2.5rem;
-            text-align: center;
-            transition: all 0.4s ease;
-            box-shadow: var(--shadow);
-        }
-        .glass-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-        .features-grid {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        }
-        .price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #4facfe;
-        }
-        .featured {
-            background: var(--primary-gradient);
-            border: none;
-            color: white;
-        }
-        .preview-section {
-            background: rgba(248,249,250,0.8);
-            padding: 2rem;
-            border-radius: 16px;
-            margin-bottom: 2rem;
-        }
-        .prompt-sample {
-            background: rgba(233,236,239,0.9);
-            padding: 1.5rem;
-            border-radius: 12px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            border-left: 5px solid #4facfe;
-            white-space: pre-wrap;
-            overflow-x: auto;
-        }
-        .testimonial {
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            border: 1px solid var(--glass-border);
-        }
-        .stars {
-            color: #ffc107;
-            font-size: 1.5rem;
-        }
-        .faq-item {
-            background: white;
-            margin-bottom: 1rem;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .faq-question {
-            padding: 1.5rem;
-            background: var(--primary-gradient);
-            color: white;
-            cursor: pointer;
-            font-weight: 600;
-        }
-        .faq-answer {
-            padding: 0 1.5rem 1.5rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        .faq-answer.active {
-            max-height: 200px;
-        }
-        footer {
-            background: rgba(0,0,0,0.8);
-            color: white;
-            text-align: center;
-            padding: 3rem 0;
-        }
-        /* Animations */
-        .animate {
-            opacity: 0;
-            transform: translateY(60px);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-        .animate.fade-left {
-            transform: translateX(-60px);
-        }
-        .animate.fade-right {
-            transform: translateX(60px);
-        }
-        .animate.animate-in {
-            opacity: 1;
-            transform: translateY(0);
-            transform: translateX(0);
-        }
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-            .nav-links {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                flex-direction: column;
-                background-color: white;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: var(--shadow);
-                padding: 2rem 0;
-            }
-            .nav-links.active {
-                left: 0;
-            }
-            .nav-links li {
-                margin: 1.5rem 0;
-            }
-            section {
-                padding: 60px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Glyph Prompt Mastery</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#packs">Pricing</a></li>
-                <li><a href="#previews">Samples</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="animate fade-up">E-Commerce Prompt Mastery</h1>
-                <p class="animate fade-up" style="transition-delay: 0.2s;">Unlock 500+ battle-tested AI prompts to 10x your Shopify & Etsy sales. SEO, copywriting, upsells, customer service – all included in our Mega Pack for just $12.99!</p>
-                <a href="#packs" class="btn animate fade-up" style="transition-delay: 0.4s;">Grab Mega Pack Now</a>
-            </div>
-        </div>
-    </section>
-    <section id="features">
-        <div class="container">
-            <h2 class="section-title animate">Power Up Your Store with AI</h2>
-            <div class="grid features-grid">
-                <div class="glass-card animate">
-                    <h3>🔍 SEO Mastery</h3>
-                    <p>150+ prompts to rank #1 on Google, Etsy search & Shopify discoverability.</p>
-                </div>
-                <div class="glass-card animate fade-left">
-                    <h3>✍️ Copywriting Pro</h3>
-                    <p>100+ prompts for irresistible product descriptions, emails & ads that convert.</p>
-                </div>
-                <div class="glass-card animate fade-right">
-                    <h3>💰 Upsell Genius</h3>
-                    <p>120+ prompts for bundles, post-purchase upsells & abandoned cart magic.</p>
-                </div>
-                <div class="glass-card animate">
-                    <h3>🛡️ Customer Service AI</h3>
-                    <p>130+ prompts for instant replies, refunds, reviews & loyalty builders.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="packs" style="background: var(--primary-gradient);">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Choose Your Pack</h2>
-            <div class="grid">
-                <div class="glass-card" style="background: rgba(255,255,255,0.2); color: white;">
-                    <h3>Starter</h3>
-                    <div class="price">$7.99</div>
-                    <ul style="text-align: left; margin: 1.5rem 0;">
-                        <li>100 SEO Prompts</li>
-                        <li>50 Copy Prompts</li>
-                    </ul>
-                    <a href="seo.html" class="btn" style="background: var(--secondary-gradient);">Buy Starter</a>
-                </div>
-                <div class="glass-card featured">
-                    <h3>🌟 Mega Pack (Best Value)</h3>
-                    <div class="price">$12.99</div>
-                    <p style="margin: 1rem 0;">500+ Prompts – Everything Included!</p>
-                    <ul style="text-align: left; margin: 1.5rem 0;">
-                        <li>All 4 Categories</li>
-                        <li>Instant Download</li>
-                        <li>Lifetime Updates</li>
-                        <li>Money-Back Guarantee</li>
-                    </ul>
-                    <a href="#" class="btn" style="background: white; color: #667eea;">Buy Mega Pack</a>
-                </div>
-                <div class="glass-card" style="background: rgba(255,255,255,0.2); color: white;">
-                    <h3>Pro</h3>
-                    <div class="price">$19.99</div>
-                    <ul style="text-align: left; margin: 1.5rem 0;">
-                        <li>Mega Pack + Templates</li>
-                        <li>Custom Prompt Builder</li>
-                    </ul>
-                    <a href="#" class="btn" style="background: var(--accent-gradient);">Coming Soon</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="previews">
-        <div class="container">
-            <h2 class="section-title animate">Prompt Samples</h2>
-            <div class="preview-section animate">
-                <h3>SEO Prompt Example</h3>
-                <div class="prompt-sample">Generate 5 SEO-optimized meta titles and descriptions for a Shopify store selling handmade leather wallets. Target keywords: "handmade leather wallets", "genuine leather wallet men". Make them under 60 chars for titles, 160 for desc. Include emojis where appropriate. Ensure they drive clicks from Google and Etsy search.</div>
-            </div>
-            <div class="preview-section animate fade-left">
-                <h3>Copywriting Prompt</h3>
-                <div class="prompt-sample">"Write a compelling Shopify product description for wireless earbuds. Highlight battery life (30hrs), noise cancellation, waterproof IPX7, bass boost. Target audience: fitness enthusiasts 25-35yo. Use AIDA formula, bullet points, urgency (limited stock), price $49.99. End with FAQ snippet."</div>
-            </div>
-            <div class="preview-section animate fade-right">
-                <h3>Upsell Prompt</h3>
-                <div class="prompt-sample">Create a post-purchase upsell email for Etsy buyers who purchased custom mugs. Offer matching coasters bundle at 20% off. Include social proof, scarcity (only 50 left), one-click buy link. Subject: "Complete your set before it's gone! 🎁"</div>
-            </div>
-        </div>
-    </section>
-    <section id="testimonials" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
-        <div class="container">
-            <h2 class="section-title" style="color: #333;">What Store Owners Say</h2>
-            <div class="grid">
-                <div class="testimonial animate">
-                    <div class="stars">★★★★★</div>
-                    <p>"Doubled my Etsy traffic in 2 weeks! These prompts are gold."</p>
-                    <strong>- Sarah K., Etsy Seller</strong>
-                </div>
-                <div class="testimonial animate fade-left">
-                    <div class="stars">★★★★★</div>
-                    <p>"SEO prompts alone paid for the pack 10x over. Shopify sales up 300%!"</p>
-                    <strong>- Mike R., Shopify Owner</strong>
-                </div>
-                <div class="testimonial animate fade-right">
-                    <div class="stars">★★★★★</div>
-                    <p>"Customer service replies are instant now. Retention skyrocketed."</p>
-                    <strong>- Lisa T., Ecom Pro</strong>
-                </div>
-                <div class="testimonial animate">
-                    <div class="stars">★★★★★</div>
-                    <p>"Best investment. Upsell prompts converted 25% of carts!"</p>
-                    <strong>- John D., Dropshipper</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq">
-        <div class="container">
-            <h2 class="section-title animate">Frequently Asked Questions</h2>
-            <div class="grid" style="grid-template-columns: 1fr;">
-                <div class="faq-item animate">
-                    <div class="faq-question" onclick="toggleFaq(this)">What AI tools work with these prompts? <span style="float:right;">+</span></div>
-                    <div class="faq-answer">ChatGPT, Claude, Gemini, Grok – any LLM. Copy-paste ready!</div>
-                </div>
-                <div class="faq-item animate fade-left">
-                    <div class="faq-question" onclick="toggleFaq(this)">Instant download? <span style="float:right;">+</span></div>
-                    <div class="faq-answer">Yes! PayPal instant delivery. Google Doc + TXT files.</div>
-                </div>
-                <div class="faq-item animate fade-right">
-                    <div class="faq-question" onclick="toggleFaq(this)">Refund policy? <span style="float:right;">+</span></div>
-                    <div class="faq-answer">100% money-back if not satisfied within 30 days. No hassle.</div>
-                </div>
-                <div class="faq-item animate">
-                    <div class="faq-question" onclick="toggleFaq(this)">Shopify/Etsy only? <span style="float:right;">+</span></div>
-                    <div class="faq-answer">Optimized for them, but works for Amazon, WooCommerce too!</div>
-                </div>
-                <div class="faq-item animate">
-                    <div class="faq-question" onclick="toggleFaq(this)">Updates included? <span style="float:right;">+</span></div>
-                    <div class="faq-answer">Lifetime free updates. New prompts added monthly.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Glyph Prompt Mastery. All rights reserved. | <a href="#" style="color: #ccc;">Privacy</a> | <a href="#" style="color: #ccc;">Terms</a></p>
-            <p>Made with ❤️ for ecom hustlers</p>
-        </div>
-    </footer>
-    <script>
-        // Mobile Nav Toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        // Nav scroll effect
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                document.querySelector('nav').style.background = 'rgba(255,255,255,0.98)';
-            } else {
-                document.querySelector('nav').style.background = 'rgba(255,255,255,0.95)';
-            }
-        });
-        // AOS-like Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-        // Observe all animate elements
-        document.querySelectorAll('.animate').forEach(el => {
-            observer.observe(el);
-        });
-        // FAQ Toggle
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector('span');
-            answer.classList.toggle('active');
-            icon.textContent = answer.classList.contains('active') ? '−' : '+';
-        }
-    </script>
-</body>
-</html>
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
+        nav ul { display: flex; justify-content: center; list-style: none; padding: 1rem 0; flex-wrap: wrap; }
+        nav li { margin: 0 1rem; }
+        nav a { text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: #28a745; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; padding: 1rem; } nav li { margin: 0.5rem 0; } }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 5rem 0; }
+        .section-title { text-align: center; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 3rem; color: #333; }
+        #hero { padding-top: 8rem; text-align: center; color: white; min-height: 80vh; display: flex; align-items: center; }
+        #hero h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 1.5rem; background: linear-gradient(45deg, #fff, rgba(255,255,255,0.8)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        #hero p { font-size: 1.3rem; max-width: 600px; margin: 0 auto 2rem; }
+        .btn { display: inline-block; background: linear-gradient(135deg, #ffc107, #fd7e14); color: #333; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 5px 15px rgba(255,193,7,0.4); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(255,193,7,0.6); }
+        .btn-paypal { background: linear-gradient(135deg, #0070ba, #003087); color: white !important; }
+        .btn:hover { transform: translateY(-3px); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: rgba(255,255,255,0.95); padding: 2.5rem 2rem; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: all 0.3s; backdrop-filter: blur(10px); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .price-card.featured { background: linear-gradient(135deg, #28a745, #20c997); color: white; }
+        .price { font-size: 2.5rem; font-weight: 700; margin: 1rem 0; }
+        #previews { background: #f8f9fa; }
+        .preview-section { background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .prompt-sample { background: #e9ecef; padding: 1.5rem; border-radius: 10px; font-family: monospace; font-size: 0.95rem; border-left: 4px solid #28a745; margin-top: 1rem; white-space: pre-wrap; }
+        .testimonial-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+        .testimonial-card { background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: left; }
+        .faq-item { margin-bottom: 1rem; }
+        .faq-question { font-weight: 600; cursor: pointer; }
+        footer { text-align: center; padding: 3rem 0; color: rgba(255,255,255,0.9); background: rgba(0,0,0,0.3); }
+        @media (max-width: 768px) { #hero { background-attachment: scroll; } }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav data-aos=&quot;fade-down&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#hero&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#packs&quot;&gt;Mega Pack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#previews&quot;&gt;Samples&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#testimonials&quot;&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#faq&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;seo.html&quot;&gt;SEO Pack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;copy.html&quot;&gt;Copy Pack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;upsell.html&quot;&gt;Upsell Pack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;cs.html&quot;&gt;CS Pack&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;section id=&quot;hero&quot; data-aos=&quot;zoom-in&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;h1&gt;E-Commerce Prompt Mastery&lt;/h1&gt;
+            &lt;p&gt;Unlock 500+ AI prompts to 10x your Shopify/Etsy store. Mega Pack $12.99 – instant scale, no coding!&lt;/p&gt;
+            &lt;a href=&quot;#packs&quot; class=&quot;btn&quot;&gt;Get Mega Pack Now&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;packs&quot; class=&quot;bg-white/80&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;h2 class=&quot;section-title&quot;&gt;Choose Your Pack&lt;/h2&gt;
+            &lt;div class=&quot;grid&quot;&gt;
+                &lt;div class=&quot;card price-card featured&quot; data-aos=&quot;flip-left&quot;&gt;
+                    &lt;h3&gt;Mega Pack&lt;/h3&gt;
+                    &lt;div class=&quot;price&quot;&gt;$12.99&lt;/div&gt;
+                    &lt;p&gt;500+ prompts for all categories&lt;/p&gt;
+                    &lt;a href=&quot;https://www.paypal.com/ncp/payment/LokkeAIMegaPack&quot; class=&quot;btn btn-paypal&quot;&gt;Buy with PayPal&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card&quot; data-aos=&quot;flip-up&quot;&gt;
+                    &lt;h3&gt;&lt;a href=&quot;seo.html&quot;&gt;SEO Pack&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p&gt;50+ SEO prompts&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card&quot; data-aos=&quot;flip-up&quot; data-aos-delay=&quot;200&quot;&gt;
+                    &lt;h3&gt;&lt;a href=&quot;copy.html&quot;&gt;Copy Pack&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p&gt;60+ copywriting prompts&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card&quot; data-aos=&quot;flip-right&quot;&gt;
+                    &lt;h3&gt;&lt;a href=&quot;upsell.html&quot;&gt;Upsell Pack&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p&gt;Upsell mastery&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card&quot; data-aos=&quot;flip-up&quot;&gt;
+                    &lt;h3&gt;&lt;a href=&quot;cs.html&quot;&gt;CS Pack&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p&gt;Customer service prompts&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;previews&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;h2 class=&quot;section-title&quot;&gt;Prompt Samples&lt;/h2&gt;
+            &lt;div class=&quot;preview-section&quot;&gt;
+                &lt;h3&gt;SEO Title Prompt Example&lt;/h3&gt;
+                &lt;div class=&quot;prompt-sample&quot;&gt;&quot;You are a top e-com SEO expert. Generate 10 SEO-optimized titles for [PRODUCT NAME], under 60 characters, front-load [MAIN KEYWORD], include [SECONDARY KEYWORDS]. Power words: Best, Ultimate, Pro.&quot;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;preview-section&quot;&gt;
+                &lt;h3&gt;Copy Hook Example&lt;/h3&gt;
+                &lt;div class=&quot;prompt-sample&quot;&gt;&quot;Write a 1-sentence hook for Instagram Reel about [PRODUCT] that exposes a common frustration and teases the [KEY BENEFIT].&quot;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;testimonials&quot; class=&quot;bg-white/80&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;h2 class=&quot;section-title&quot;&gt;What Users Say&lt;/h2&gt;
+            &lt;div class=&quot;grid testimonial-grid&quot;&gt;
+                &lt;div class=&quot;testimonial-card&quot;&gt;
+                    &lt;p&gt;&quot;10x my CTR in a week! SEO pack is gold.&quot;&lt;/p&gt;
+                    &lt;div&gt;- Sarah, Etsy Seller&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-card&quot;&gt;
+                    &lt;p&gt;&quot;Copy prompts converted my descriptions. Sales up 300%!&quot;&lt;/p&gt;
+                    &lt;div&gt;- Mike, Shopify Owner&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-card&quot;&gt;
+                    &lt;p&gt;&quot;Mega pack saved hours. Perfect for scaling.&quot;&lt;/p&gt;
+                    &lt;div&gt;- Anna, Ecom Pro&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-card&quot;&gt;
+                    &lt;p&gt;&quot;Upsells now automatic. Genius prompts!&quot;&lt;/p&gt;
+                    &lt;div&gt;- Tom&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;faq&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;h2 class=&quot;section-title&quot;&gt;FAQ&lt;/h2&gt;
+            &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto&quot;&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: What is included?&lt;/div&gt;
+                    &lt;p&gt;A: 500+ prompts across SEO, copy, upsell, CS.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: Instant download?&lt;/div&gt;
+                    &lt;p&gt;A: Yes, PayPal instant.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: Works with ChatGPT?&lt;/div&gt;
+                    &lt;p&gt;A: Yes, Grok, Claude too.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: Refund?&lt;/div&gt;
+                    &lt;p&gt;A: 30 days money back.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: Updates?&lt;/div&gt;
+                    &lt;p&gt;A: Lifetime free.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;faq-item&quot;&gt;
+                    &lt;div class=&quot;faq-question&quot;&gt;Q: Commercial use?&lt;/div&gt;
+                    &lt;p&gt;A: Yes, unlimited.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2026 Glyph Prompt Mastery. All rights reserved. | &lt;a href=&quot;mailto:support@glyphjohnson.com&quot;&gt;Support&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+        AOS.init({ duration: 1200, once: true });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
