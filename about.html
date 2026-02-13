@@ -3,88 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Glyph Prompt Mastery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Founder | Glyph Prompt Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Meet the passion-driven founder behind precision AI prompts for ecom growth.">
     <style>
-        /* Paste the entire style block from index.html here */
         :root {
-            --bg-dark: #0a0a0f;
-            --neon-blue: #00ffff;
-            --neon-purple: #ff00ff;
-            --neon-cyan: #00ffea;
-            --gray-100: #e0e0e0;
-            --gray-200: #b0b0b0;
-            --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #1a0a2a 40%, #0a0f2a 100%);
-            --gradient-card: linear-gradient(145deg, rgba(26,26,42,0.8), rgba(15,15,26,0.9));
-            --shadow-neon: 0 0 20px rgba(0,255,255,0.3), 0 10px 40px rgba(0,0,0,0.5);
-            --shadow-3d: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,255,255,0.1);
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --border: #404040;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background: var(--bg-dark); 
-            color: var(--gray-100); 
-            line-height: 1.5; 
-            overflow-x: hidden;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1, h2, h3 { 
-            font-family: 'Orbitron', monospace; 
-            letter-spacing: 0.05em; 
-            text-transform: uppercase;
-            text-shadow: 0 0 10px var(--neon-blue);
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 400;
         }
-        h1 { font-weight: 900; font-size: clamp(3rem, 8vw, 7rem); }
-        h2 { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 3rem); }
-        .neon-glow { 
-            color: var(--neon-blue); 
-            text-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 50px var(--neon-purple);
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
         }
-        section { padding: 1rem 1.5rem; position: relative; }
-        @media (min-width: 768px) { section { padding: 1.5rem 3rem; } }
-        .hero { 
-            min-height: 100vh; 
-            background: var(--gradient-hero);
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        .hero {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1.25rem;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: var(--accent-blue);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
         }
-        @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .story { max-width: 700px; margin: 0 auto; padding: 2rem; font-size: 1.2rem; }
-        .nav { 
-            position: fixed; 
-            top: 2rem; 
-            left: 2rem; 
-            z-index: 100; 
-            background: rgba(10,10,15,0.9); 
-            padding: 1rem; 
-            border: 1px solid var(--neon-blue); 
-            border-radius: 10px; 
-            box-shadow: var(--shadow-neon);
+        .btn:hover {
+            background: var(--accent-blue-dark);
         }
-        .nav a { color: var(--neon-blue); text-decoration: none; display: block; margin: 0.25rem 0; font-family: Rajdhani; }
-        @media (max-width: 768px) { .nav { top: 1rem; left: 1rem; padding: 0.75rem; } }
+        .card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 26, 26, 0.95);
+            border-bottom: 1px solid var(--border);
+            z-index: 10;
+        }
+        nav {
+            padding: 1rem 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <a href="index.html">← Home</a>
-    </nav>
-    <section class="hero">
-        <h1 class="neon-glow">The Founder</h1>
-        <div class="story">
-            <p>Passioneret founder behind Glyph Prompt Mastery. Prompting isn't just code – it's digital craft. Years scaling ecom stores taught me the precise prompts that turn AI into a growth engine.</p>
-            <p>From SEO domination to CS automation, every prompt is battle-tested. No fluff, pure leverage. Join the craft.</p>
-        </div>
-    </section>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Founder</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li><a href="copy.html">Copy</a></li>
+                <li><a href="upsell.html">Upsell</a></li>
+                <li><a href="cs.html">CS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The Founder</h1>
+                <p>Passion-driven prompting as digital craft. Years scaling ecom stores taught me the precise prompts that turn AI into a growth engine.</p>
+                <a href="index.html#products" class="btn">Explore Prompts</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Battle-Tested Expertise</h2>
+            <div class="card">
+                <p>From SEO domination to CS automation, every prompt is forged in real revenue fire. No theory—pure leverage for your store.</p>
+                <p>Why trust? Because I've walked the path: prompts that doubled traffic, tripled conversions, automated the grind.</p>
+            </div>
+            <div class="card">
+                <h3>What's Inside Glyph</h3>
+                <ul>
+                    <li>500+ engineered prompts</li>
+                    <li>SEO, Copy, Upsell, CS mastery</li>
+                    <li>Instant delivery, lifetime updates</li>
+                </ul>
+                <a href="index.html#products" class="btn">Get The Mega Pack</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Glyph Prompt Mastery. Crafted with passion.</p>
+    </footer>
 </body>
 </html>
