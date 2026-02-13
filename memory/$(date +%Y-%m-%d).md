@@ -1,0 +1,1 @@
+- GitHub PAT sat og auth login som glyphjohnson. Token scopes fulde. Gemt i secrets/github_pat.txt. Repo GlyPhIsTheGoAT67 ikke fundet – muligvis username eller andet.
