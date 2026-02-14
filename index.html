@@ -316,7 +316,14 @@
                 max-width: none;
             }
         }
-    </style>
+            .grid-cell {
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+</style>
 </head>
 <body>
     <header>
@@ -347,27 +354,27 @@
             <h2>Real Store Owners Crushing It</h2>
             <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">Don't take our word—see the wins</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="card">
+                <div class="grid-cell card">
                     <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
                     <blockquote>"SEO prompts tripled my Etsy traffic (1.2k → 4.1k/mo). Sales +210%! No ad budget needed."</blockquote>
                     <strong>— Sarah K.<br><small>Etsy Powerhouse, $58k/mo</small></strong>
                 </div>
-                <div class="card">
+                <div class="grid-cell card">
                     <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
                     <blockquote>"Copy prompts: PDPs now convert 4.2x better, AOV up 41%. Traffic-to-profit machine."</blockquote>
                     <strong>— Mike R.<br><small>Shopify DTC Brand</small></strong>
                 </div>
-                <div class="card">
+                <div class="grid-cell card">
                     <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
                     <blockquote>"Upsell prompts = $16k/mo added revenue. 32% AOV lift on every order. Scalable gold."</blockquote>
                     <strong>— Alex T.<br><small>7-Figure Ecom</small></strong>
                 </div>
-                <div class="card">
+                <div class="grid-cell card">
                     <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
                     <blockquote>"CS prompts auto-handle 88% tickets. Retention 48%↑, ops streamlined."</blockquote>
                     <strong>— Lisa M.<br><small>Ecom Operations Lead</small></strong>
                 </div>
-                <div class="card">
+                <div class="grid-cell card">
                     <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
                     <blockquote>"Best $13 biz investment. Prompts outperform agencies, scale infinitely."</blockquote>
                     <strong>— Jordan P.<br><small>Solo Founder</small></strong>
@@ -377,7 +384,7 @@
 
         <section id="products" class="container">
             <h2>Grab Your Prompt Arsenal</h2>
-            <div class="card">
+            <div class="grid-cell card">
                 <h3>Starter Pack</h3>
                 <div class="price">$10</div>
                 <ul>
@@ -393,7 +400,7 @@
                     <input type="submit" value="Buy Starter ($10)" class="btn">
                 </form>
             </div>
-            <div class="card">
+            <div class="grid-cell card">
                 <h3>Mega Pack (Most Popular)</h3>
                 <div class="price">$12.99</div>
                 <p>Everything: 500+ prompts. Instant PDF, lifetime access/updates.</p>
@@ -412,7 +419,7 @@
                     <input type="submit" value="Buy Mega Pack ($12.99)" class="btn">
                 </form>
             </div>
-            <div class="card">
+            <div class="grid-cell card">
                 <h3>Pro Pack</h3>
                 <div class="price">$19.99<span>/mo</span></div>
                 <p>Coming soon: Advanced prompts, custom engineering, VIP support, exclusive dashboard.</p>
