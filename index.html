@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now."-->
+    <meta name="description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.">
     <style>
         :root {
             --bg-primary: #1a1a1a;
@@ -15,6 +14,7 @@
             --accent-blue: #3b82f6;
             --accent-blue-dark: #2563eb;
             --border: #404040;
+            --gold: #fbbf24;
         }
         * {
             margin: 0;
@@ -25,7 +25,7 @@
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%);
             color: var(--text-primary);
             line-height: 1.6;
@@ -34,7 +34,7 @@
             padding-bottom: 100px;
         }
         h1, h2, h3 {
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
             color: var(--text-primary);
         }
@@ -48,8 +48,9 @@
             color: var(--accent-blue);
         }
         h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.75rem;
+            font-size: 1.375rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
         }
         p {
             margin-bottom: 1rem;
@@ -61,12 +62,12 @@
             font-size: 1.1rem;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.25rem;
         }
         section {
-            padding: 3rem 0;
+            padding: 4rem 0;
         }
         .hero {
             min-height: 100vh;
@@ -76,9 +77,10 @@
             align-items: center;
             text-align: center;
             padding: 2rem 1.25rem;
+            background: radial-gradient(circle at 20% 80%, rgba(59,130,246,0.1) 0%, transparent 50%), linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
         }
         .btn {
-            display: block;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: 1.125rem 2.25rem;
@@ -94,7 +96,6 @@
             line-height: 1.4;
             min-height: 3.125rem;
             box-shadow: 0 4px 20px rgba(59,130,246,0.3);
-            width: fit-content;
             margin: 1rem auto 0;
             position: relative;
             overflow: hidden;
@@ -110,32 +111,38 @@
         }
         .card {
             background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: 0.75rem;
+            padding: 2.5rem 2rem;
+            border-radius: 1rem;
             border: 1px solid var(--border);
             margin-bottom: 2rem;
             opacity: 0;
             transform: translateY(30px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
             animation: fadeInUp 0.8s ease-out forwards;
         }
-
         .card:hover {
-            transform: scale(1.02) translateY(-4px);
-            box-shadow: 0 20px 40px rgba(59,130,246,0.2), 0 10px 20px rgba(0,0,0,0.3);
+            transform: scale(1.02) translateY(-8px);
+            box-shadow: 0 25px 50px rgba(59,130,246,0.25), 0 15px 30px rgba(0,0,0,0.4);
             border-color: var(--accent-blue);
+            background: linear-gradient(145deg, var(--bg-secondary), #333);
         }
         .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent-blue);
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin: 1rem 0;
         }
         .price span {
-            font-size: 0.6em;
+            font-size: 0.5em;
             opacity: 0.8;
             vertical-align: super;
             font-weight: normal;
+            background: none;
+            -webkit-text-fill-color: var(--text-secondary);
         }
         ul {
             list-style: none;
@@ -143,16 +150,17 @@
             margin-bottom: 1.5rem;
         }
         ul li {
-            padding: 0.25rem 0;
+            padding: 0.5rem 0;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 2rem;
         }
         ul li::before {
-            content: "✓";
-            color: var(--accent-blue);
+            content: "✨";
+            color: var(--gold);
             font-weight: bold;
             position: absolute;
             left: 0;
+            font-size: 1.2rem;
         }
         .prompt-sample {
             background: var(--bg-primary);
@@ -170,27 +178,30 @@
         }
         summary {
             cursor: pointer;
-            padding: 1rem;
+            padding: 1.25rem;
             background: var(--bg-secondary);
-            border-radius: 0.5rem;
-            font-weight: 500;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        summary:hover {
+            background: #333;
         }
         details[open] summary {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            border-radius: 0.75rem 0.75rem 0 0;
         }
         .faq-answer {
-            padding: 1rem 1rem 1.25rem;
+            padding: 1.5rem;
             background: var(--bg-primary);
-            border-radius: 0 0 0.5rem 0.5rem;
+            border-radius: 0 0 0.75rem 0.75rem;
         }
         header {
             position: sticky;
             top: 0;
-            background: rgba(26, 26, 26, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(26, 26, 26, 0.98);
+            backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
-            z-index: 10;
+            z-index: 100;
         }
         nav {
             padding: 1rem 0;
@@ -198,7 +209,7 @@
         nav ul {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 3rem;
             list-style: none;
             flex-wrap: wrap;
         }
@@ -206,26 +217,46 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.875rem;
+            font-size: 1rem;
+            transition: color 0.3s;
         }
         nav a:hover {
             color: var(--accent-blue);
         }
         footer {
             text-align: center;
-            padding: 2rem 0;
+            padding: 3rem 0 2rem;
             border-top: 1px solid var(--border);
             color: var(--text-secondary);
         }
-        form {
-            margin-top: 1rem;
+        form input[type="email"] {
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
         }
         form input[type="submit"] {
             width: 100%;
-            font-size: 1rem;
-            border: none;
+            font-size: 1.125rem;
         }
-        /* Sticky Buy Button */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .grid-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        /* Sticky CTA */
         #sticky-cta {
             position: fixed;
             bottom: 0;
@@ -234,101 +265,74 @@
             background: rgba(42, 42, 42, 0.98);
             backdrop-filter: blur(20px);
             border-top: 1px solid var(--border);
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
             z-index: 100;
             transform: translateY(100%);
-            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            box-shadow: 0 -4px 20px rgba(0,0,0, 0.4);
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 -8px 30px rgba(0,0,0, 0.5);
         }
         #sticky-cta.show {
             transform: translateY(0);
         }
         #sticky-cta p {
-            margin: 0 0 0.5rem 0;
-            font-size: 0.875rem;
+            margin: 0 0 1rem 0;
+            font-size: 1rem;
             color: var(--text-secondary);
-            font-weight: 500;
+            font-weight: 600;
         }
         #sticky-cta .btn {
             display: block;
-            max-width: 320px;
+            max-width: 350px;
             margin: 0 auto;
         }
-
         @keyframes fadeInUp {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
-        .testimonials .card:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-        .testimonials .card:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        .testimonials .card:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-        .testimonials .card:nth-child(4) {
-            animation-delay: 0.4s;
-        }
-        .testimonials .card:nth-child(5) {
-            animation-delay: 0.5s;
-        }
-        @media (min-width: 769px) {
-            #sticky-cta {
-                padding: 1.25rem 5%;
-            }
-            #sticky-cta .btn {
-                max-width: 280px;
-            }
-        }
+        .testimonials .card:nth-child(1) { animation-delay: 0.1s; }
+        .testimonials .card:nth-child(2) { animation-delay: 0.2s; }
+        .testimonials .card:nth-child(3) { animation-delay: 0.3s; }
+        .testimonials .card:nth-child(4) { animation-delay: 0.4s; }
+        .testimonials .card:nth-child(5) { animation-delay: 0.5s; }
+        .features .card:nth-child(1) { animation-delay: 0.1s; }
+        .features .card:nth-child(2) { animation-delay: 0.2s; }
+        .features .card:nth-child(3) { animation-delay: 0.3s; }
+        .features .card:nth-child(4) { animation-delay: 0.4s; }
         @media (max-width: 768px) {
             .container {
                 padding: 0 1rem;
             }
             section {
-                padding: 2rem 0;
+                padding: 3rem 0;
             }
             nav ul {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-            }
-            .card {
-                padding: 1.5rem;
+                gap: 1.5rem;
+                font-size: 0.95rem;
             }
             .hero {
-                padding: 4rem 1rem 2rem 1rem;
+                padding: 4rem 1rem 3rem;
             }
             .btn {
                 width: 100%;
-            }
-            input[type="email"] {
-                font-size: 16px;
-                -webkit-appearance: none;
-                -moz-appearance: textfield;
+                max-width: 400px;
             }
             #sticky-cta .btn {
                 width: 100%;
                 max-width: none;
             }
+            .price {
+                font-size: 2.5rem;
+            }
         }
-            .grid-cell {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            display: flex;
+        @media (min-width: 769px) {
+            #sticky-cta {
+                padding: 1.5rem 5%;
+            }
         }
-
-.grid-cell * { text-align: center; }
-
-.card { text-align: center; }
-</style>
+    </style>
 </head>
 <body>
     <header>
@@ -348,39 +352,64 @@
         <section class="hero" id="hero">
             <div class="container">
                 <h1>Glyph Prompt Mastery: 500+ AI Prompts for 10x Ecom Growth</h1>
-                <div>
-                    <p>500+ engineered prompts proven on live stores: SEO traffic explodes 3x+, copy converts 2-5x better, upsells boost AOV 25-40%, CS automates 80% of tickets. Copy-paste → results. No guesswork.</p>
-                </div>
+                <p>500+ engineered prompts proven on live stores: SEO traffic explodes 3x+, copy converts 2-5x better, upsells boost AOV 25-40%, CS automates 80% of tickets. Copy-paste → results. No guesswork.</p>
                 <a href="#products" class="btn">Unlock Packs Now</a>
+            </div>
+        </section>
+
+        <section class="features container">
+            <h2>Battle-Tested Growth Levers</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary); max-width: 60ch; margin-left: auto; margin-right: auto;">Targeted prompt packs for every stage of your funnel. Hyper-optimized for real revenue.</p>
+            <div class="grid-container">
+                <div class="grid-cell card">
+                    <h3>🔍 SEO Mastery</h3>
+                    <p>3x+ organic traffic. Keywords, content, site audits—proven on Etsy/Shopify stores.</p>
+                    <a href="seo.html" class="btn" style="font-size: 1rem; padding: 0.875rem 1.75rem; margin-top: 1rem;">Dive into SEO</a>
+                </div>
+                <div class="grid-cell card">
+                    <h3>📝 Copy Conversion</h3>
+                    <p>2-5x better PDPs, emails, ads. Persuasion engineered for ecom.</p>
+                    <a href="copy.html" class="btn" style="font-size: 1rem; padding: 0.875rem 1.75rem; margin-top: 1rem;">Master Copy</a>
+                </div>
+                <div class="grid-cell card">
+                    <h3>💰 Upsell Revenue</h3>
+                    <p>25-40% AOV lift. Bundles, one-click upsells that print money.</p>
+                    <a href="upsell.html" class="btn" style="font-size: 1rem; padding: 0.875rem 1.75rem; margin-top: 1rem;">Upsell Secrets</a>
+                </div>
+                <div class="grid-cell card">
+                    <h3>🛠️ CS Automation</h3>
+                    <p>80% tickets handled automatically. Retention + ops efficiency.</p>
+                    <a href="cs.html" class="btn" style="font-size: 1rem; padding: 0.875rem 1.75rem; margin-top: 1rem;">Automate CS</a>
+                </div>
             </div>
         </section>
 
         <section class="testimonials container">
             <h2>Real Store Owners Crushing It</h2>
             <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">Don't take our word—see the wins</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="grid-container">
                 <div class="grid-cell card">
-                    <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
+                    <div style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem;">★★★★★</div>
                     <blockquote>"SEO prompts tripled my Etsy traffic (1.2k → 4.1k/mo). Sales +210%! No ad budget needed."</blockquote>
                     <strong>— Sarah K.<br><small>Etsy Powerhouse, $58k/mo</small></strong>
                 </div>
                 <div class="grid-cell card">
-                    <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
+                    <div style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem;">★★★★★</div>
                     <blockquote>"Copy prompts: PDPs now convert 4.2x better, AOV up 41%. Traffic-to-profit machine."</blockquote>
                     <strong>— Mike R.<br><small>Shopify DTC Brand</small></strong>
                 </div>
                 <div class="grid-cell card">
-                    <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
+                    <div style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem;">★★★★★</div>
                     <blockquote>"Upsell prompts = $16k/mo added revenue. 32% AOV lift on every order. Scalable gold."</blockquote>
                     <strong>— Alex T.<br><small>7-Figure Ecom</small></strong>
                 </div>
                 <div class="grid-cell card">
-                    <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
+                    <div style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem;">★★★★★</div>
                     <blockquote>"CS prompts auto-handle 88% tickets. Retention 48%↑, ops streamlined."</blockquote>
                     <strong>— Lisa M.<br><small>Ecom Operations Lead</small></strong>
                 </div>
                 <div class="grid-cell card">
-                    <div style="color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;">★★★★★</div>
+                    <div style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem;">★★★★★</div>
                     <blockquote>"Best $13 biz investment. Prompts outperform agencies, scale infinitely."</blockquote>
                     <strong>— Jordan P.<br><small>Solo Founder</small></strong>
                 </div>
@@ -389,54 +418,56 @@
 
         <section id="products" class="container">
             <h2>Grab Your Prompt Arsenal</h2>
-            <div class="grid-cell card">
-                <h3>Starter Pack</h3>
-                <div class="price">$10</div>
-                <ul>
-                    <li>100+ SEO Mastery Prompts</li>
-                    <li>50+ Copywriting Killers</li>
-                </ul>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_xclick">
-                    <input type="hidden" name="business" value="boyisak@gmail.com">
-                    <input type="hidden" name="item_name" value="Glyph Starter Pack">
-                    <input type="hidden" name="amount" value="10.00">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="submit" value="Buy Starter ($10)" class="btn">
-                </form>
-            </div>
-            <div class="grid-cell card">
-                <h3>Mega Pack (Most Popular)</h3>
-                <div class="price">$12.99</div>
-                <p>Everything: 500+ prompts. Instant PDF, lifetime access/updates.</p>
-                <ul>
-                    <li>SEO Traffic Explosion</li>
-                    <li>Copy Conversion Boost</li>
-                    <li>Upsell Revenue Stack</li>
-                    <li>CS Automation</li>
-                </ul>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_xclick">
-                    <input type="hidden" name="business" value="boyisak@gmail.com">
-                    <input type="hidden" name="item_name" value="Glyph Mega Pack">
-                    <input type="hidden" name="amount" value="12.99">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="submit" value="Buy Mega Pack ($12.99)" class="btn">
-                </form>
-            </div>
-            <div class="grid-cell card">
-                <h3>Pro Pack</h3>
-                <div class="price">$19.99<span>/mo</span></div>
-                <p>Coming soon: Advanced prompts, custom engineering, VIP support, exclusive dashboard.</p>
-                <form id="pro-waitlist">
-                    <input type="email" id="pro-email" name="email" placeholder="Enter your email for Pro updates" required>
-                    <button type="submit" class="btn">Join Waitlist Free</button>
-                </form>
+            <div class="grid-container">
+                <div class="grid-cell card">
+                    <h3>Starter Pack</h3>
+                    <div class="price">$10</div>
+                    <ul>
+                        <li>100+ SEO Mastery Prompts</li>
+                        <li>50+ Copywriting Killers</li>
+                    </ul>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="boyisak@gmail.com">
+                        <input type="hidden" name="item_name" value="Glyph Starter Pack">
+                        <input type="hidden" name="amount" value="10.00">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="submit" value="Buy Starter ($10)" class="btn">
+                    </form>
+                </div>
+                <div class="grid-cell card">
+                    <h3>Mega Pack (Most Popular)</h3>
+                    <div class="price">$12.99</div>
+                    <p>Everything: 500+ prompts. Instant PDF, lifetime access/updates.</p>
+                    <ul>
+                        <li>SEO Traffic Explosion</li>
+                        <li>Copy Conversion Boost</li>
+                        <li>Upsell Revenue Stack</li>
+                        <li>CS Automation</li>
+                    </ul>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="boyisak@gmail.com">
+                        <input type="hidden" name="item_name" value="Glyph Mega Pack">
+                        <input type="hidden" name="amount" value="12.99">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="submit" value="Buy Mega Pack ($12.99)" class="btn">
+                    </form>
+                </div>
+                <div class="grid-cell card">
+                    <h3>Pro Pack</h3>
+                    <div class="price">$19.99<span>/mo</span></div>
+                    <p>Coming soon: Advanced prompts, custom engineering, VIP support, exclusive dashboard.</p>
+                    <form id="pro-waitlist">
+                        <input type="email" id="pro-email" name="email" placeholder="Enter your email for Pro updates" required>
+                        <button type="submit" class="btn">Join Waitlist Free</button>
+                    </form>
+                </div>
             </div>
         </section>
 
         <section class="faq container">
-            <h2>FAQ</h2>
+            <h2>Frequently Asked Questions</h2>
             <details>
                 <summary>What AIs are compatible?</summary>
                 <div class="faq-answer">ChatGPT (3.5/4o), Claude 3.5, Grok, Gemini—plug &amp; play.</div>
@@ -457,53 +488,60 @@
 
         <section class="cta container">
             <h2>Ready to 10x Your Store?</h2>
-            <p>Engineered for results. Deploy today, scale tomorrow.</p>
-            <a href="#products" class="btn">Get Mega Pack Now</a>
+            <p style="font-size: 1.25rem; max-width: 50ch; margin: 0 auto 2rem;">Engineered for results. Deploy today, scale tomorrow. Join 100+ stores winning with Glyph.</p>
+            <a href="#products" class="btn">Get Mega Pack Now →</a>
         </section>
     </main>
 
     <div id="sticky-cta">
-        <p>🚀 Most Popular Choice</p>
-        <a href="#products" class="btn">Buy Mega Pack $12.99 → Instant Access</a>
+        <p>🚀 Most Popular: Mega Pack</p>
+        <a href="#products" class="btn">Buy $12.99 → Instant Access</a>
     </div>
 
     <footer class="container">
-        <p>&copy; 2026 Glyph Prompt Mastery. Passion-built for ecom warriors.</p>
+        <p>&copy; 2026 Glyph Prompt Mastery. Passion-built for ecom warriors. | <a href="mailto:glyphjohnson@gmail.com" style="color: var(--accent-blue);">Contact</a></p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Animate cards on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            });
+            document.querySelectorAll('.card').forEach(card => {
+                observer.observe(card);
+            });
+
             // Sticky CTA
             const stickyCta = document.getElementById('sticky-cta');
             let ticking = false;
             function updateSticky() {
-                if (window.scrollY > window.innerHeight * 0.3) {
-                    stickyCta.classList.add('show');
-                } else {
-                    stickyCta.classList.remove('show');
-                }
+                stickyCta.classList.toggle('show', window.scrollY > window.innerHeight * 0.3);
                 ticking = false;
             }
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', () => {
                 if (!ticking) {
                     requestAnimationFrame(updateSticky);
                     ticking = true;
                 }
-            });
+            }, { passive: true });
 
-            // Pro Waitlist Form
-            const proForm = document.getElementById('pro-waitlist');
-            proForm.addEventListener('submit', function(e) {
+            // Pro Waitlist
+            document.getElementById('pro-waitlist').addEventListener('submit', function(e) {
                 e.preventDefault();
                 const email = document.getElementById('pro-email').value.trim();
-                if (!email || !email.includes('@') || !email.includes('.')) {
-                    alert('Please enter a valid email address.');
-                    return;
+                if (email && email.includes('@') && email.includes('.')) {
+                    const subject = 'Glyph Pro Waitlist Signup';
+                    const body = `Email: ${email}\n\nPro Pack interest confirmed!`;
+                    window.location.href = `mailto:glyphjohnson@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    this.reset();
+                } else {
+                    alert('Valid email required.');
                 }
-                const subject = encodeURIComponent('Glyph Prompt Mastery - Pro Waitlist Signup');
-                const body = encodeURIComponent(`Email: ${email}\n\nReady for Pro Pack updates and early access!`);
-                window.location.href = `mailto:glyphjohnson@gmail.com?subject=${subject}&body=${body}`;
-                proForm.reset();
             });
         });
     </script>
