@@ -99,6 +99,16 @@
             border-radius: 0.75rem;
             border: 1px solid var(--border);
             margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .card:hover {
+            transform: scale(1.02) translateY(-4px);
+            box-shadow: 0 20px 40px rgba(59,130,246,0.2), 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent-blue);
         }
         .price {
             font-size: 2.5rem;
@@ -232,6 +242,29 @@
             margin: 0 auto;
             font-size: 1.05rem;
             padding: 1rem 1.5rem;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonials .card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .testimonials .card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .testimonials .card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .testimonials .card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        .testimonials .card:nth-child(5) {
+            animation-delay: 0.5s;
         }
         @media (min-width: 769px) {
             #sticky-cta {
