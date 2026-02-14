@@ -3,29 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.">
-    <meta name="keywords" content="AI prompts, ecommerce SEO prompts, shopify prompts, etsy prompts, copywriting prompts, upsell prompts, customer service prompts, chatgpt prompts, claude prompts, prompt engineering">
-    <meta property="og:title" content="Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth">
-    <meta property="og:description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://glyphjohnson.github.io/glyph-prompt-mastery/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth">
-    <meta name="twitter:description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.">
-    <link rel="canonical" href="https://glyphjohnson.github.io/glyph-prompt-mastery/">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth",
-  "description": "500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.",
-  "url": "https://glyphjohnson.github.io/glyph-prompt-mastery/"
-}
-    </script>
+    <meta name="description" content="500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now."-->
     <style>
         :root {
             --bg-primary: #1a1a1a;
@@ -40,6 +20,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -123,6 +106,12 @@
             color: var(--accent-blue);
             margin: 1rem 0;
         }
+        .price span {
+            font-size: 0.6em;
+            opacity: 0.8;
+            vertical-align: super;
+            font-weight: normal;
+        }
         ul {
             list-style: none;
             padding: 0;
@@ -174,6 +163,7 @@
             position: sticky;
             top: 0;
             background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
             z-index: 10;
         }
@@ -211,6 +201,46 @@
             font-size: 1rem;
             border: none;
         }
+        /* Sticky Buy Button */
+        #sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            background: rgba(42, 42, 42, 0.98);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            padding: 1rem;
+            text-align: center;
+            z-index: 100;
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 -4px 20px rgba(0,0,0, 0.4);
+        }
+        #sticky-cta.show {
+            transform: translateY(0);
+        }
+        #sticky-cta p {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        #sticky-cta .btn {
+            display: block;
+            max-width: 320px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            padding: 1rem 1.5rem;
+        }
+        @media (min-width: 769px) {
+            #sticky-cta {
+                padding: 1.25rem 5%;
+            }
+            #sticky-cta .btn {
+                max-width: 280px;
+            }
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 0 1rem;
@@ -219,14 +249,27 @@
                 padding: 2rem 0;
             }
             nav ul {
+                flex-direction: column;
                 gap: 1rem;
+                align-items: center;
             }
             .card {
                 padding: 1.5rem;
             }
             .hero {
-                padding: 4rem 1rem 2rem;
-                min-height: 90vh;
+                padding: 4rem 1rem 2rem 1rem;
+            }
+            .btn {
+                width: 100%;
+            }
+            input[type="email"] {
+                font-size: 16px;
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+            }
+            #sticky-cta .btn {
+                width: 100%;
+                max-width: none;
             }
         }
     </style>
@@ -290,7 +333,6 @@
 
         <section id="products" class="container">
             <h2>Grab Your Prompt Arsenal</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             <div class="card">
                 <h3>Starter Pack</h3>
                 <div class="price">$10</div>
@@ -328,10 +370,12 @@
             </div>
             <div class="card">
                 <h3>Pro Pack</h3>
-                <div class="price">$19.99</div>
-                <p>Coming soon: Advanced + 1:1 support.</p>
-                <a href="mailto:boyisak@gmail.com?subject=Pro Pack Interest" class="btn">Notify Me</a>
-            </div>
+                <div class="price">$19.99<span>/mo</span></div>
+                <p>Coming soon: Advanced prompts, custom engineering, VIP support, exclusive dashboard.</p>
+                <form id="pro-waitlist">
+                    <input type="email" id="pro-email" name="email" placeholder="Enter your email for Pro updates" required>
+                    <button type="submit" class="btn">Join Waitlist Free</button>
+                </form>
             </div>
         </section>
 
@@ -339,7 +383,7 @@
             <h2>FAQ</h2>
             <details>
                 <summary>What AIs are compatible?</summary>
-                <div class="faq-answer">ChatGPT (3.5/4o), Claude 3.5, Grok, Gemini—plug & play.</div>
+                <div class="faq-answer">ChatGPT (3.5/4o), Claude 3.5, Grok, Gemini—plug &amp; play.</div>
             </details>
             <details>
                 <summary>How's delivery work?</summary>
@@ -362,8 +406,50 @@
         </section>
     </main>
 
+    <div id="sticky-cta">
+        <p>🚀 Most Popular Choice</p>
+        <a href="#products" class="btn">Buy Mega Pack $12.99 → Instant Access</a>
+    </div>
+
     <footer class="container">
         <p>&copy; 2026 Glyph Prompt Mastery. Passion-built for ecom warriors.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sticky CTA
+            const stickyCta = document.getElementById('sticky-cta');
+            let ticking = false;
+            function updateSticky() {
+                if (window.scrollY > window.innerHeight * 0.3) {
+                    stickyCta.classList.add('show');
+                } else {
+                    stickyCta.classList.remove('show');
+                }
+                ticking = false;
+            }
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(updateSticky);
+                    ticking = true;
+                }
+            });
+
+            // Pro Waitlist Form
+            const proForm = document.getElementById('pro-waitlist');
+            proForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('pro-email').value.trim();
+                if (!email || !email.includes('@') || !email.includes('.')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                const subject = encodeURIComponent('Glyph Prompt Mastery - Pro Waitlist Signup');
+                const body = encodeURIComponent(`Email: ${email}\n\nReady for Pro Pack updates and early access!`);
+                window.location.href = `mailto:glyphjohnson@gmail.com?subject=${subject}&body=${body}`;
+                proForm.reset();
+            });
+        });
+    </script>
 </body>
 </html>
