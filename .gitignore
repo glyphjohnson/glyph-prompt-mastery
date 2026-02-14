@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+memory/*.md
+AGENTS.md
+SOUL.md
+USER.md
+IDENTITY.md
+TOOLS.md
+MEMORY.md
