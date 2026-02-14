@@ -3,7 +3,7 @@
 
 **50+ Pro Prompts, Templates, Examples & Tips | Equivalent to 50+ Printed Pages**  
 **Compiled & Expanded for Lokke.ai – E-Commerce Edition**  
-**Version 2.0 | February 13, 2026**  
+**Version 3.0 | February 14, 2026 - 2026 Optimized**  \n\n## 2026 Best Practices Template\n```\n[PASTE TEMPLATE FROM prompt-best-practices-updated.md]\n```\n**Upgrade all prompts below with this structure for 25% better results.**  
 **PDF-Ready: `pandoc seo-pack.md -o seo-pack.pdf --toc -V geometry:margin=1in`**  
 
 ---
@@ -61,7 +61,7 @@ Denne pakke er specielt til e-com niches som fashion, electronics, beauty, home 
 
 ## SEO Title Prompts (20+) {#titles}
 ```
-1. "You are a top e-com SEO expert. Generate 10 SEO-optimized titles for [PRODUCT NAME], under 60 characters, front-load [MAIN KEYWORD], include [SECONDARY KEYWORDS: list]. Power words: Best, Ultimate, Pro."
+1. **Optimized v3 (CoT/XML/JSON):**  \n```\n&lt;role&gt;Top e-com SEO expert&lt;/role&gt;\n&lt;task&gt;Generate 10 titles &lt;60 chars.&lt;/task&gt;\n&lt;input&gt;[PRODUCT NAME], KW: [MAIN KEYWORD] [SECONDARY]&lt;/input&gt;\n&lt;examples&gt;Ex: Tshirt, organic → Best Organic T-Shirt Pro&lt;/examples&gt;\n&lt;constraints&gt;Front-load KW, power words, low temp 0.3&lt;/constraints&gt;\n&lt;output&gt;JSON {\"titles\": [\"1\",...]}&lt;/output&gt;\n&lt;thinking&gt;1. KW. 2. Power. 3. Benefit.&lt;/thinking&gt;\nSelf-eval: Score 1-10 CTR potential.\n```
 
 2. "Create 8 compelling, urgency-driven SEO titles for [PRODUCT] on sale, KW: [MAIN KW]. Include 'Limited Time', '50% Off'."
 

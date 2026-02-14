@@ -21,7 +21,7 @@ SMTP_SERVER = 'smtp.gmail.com'
 PRODUCTS_DIR = 'products'
 
 def ensure_pdfs(dry_run=False):
-    \"\"\"Generate PDF from MD files if PDF doesn't exist.\"\"\"
+    """Generate PDF from MD files if PDF doesn't exist."""
     md_files = glob.glob(f'{PRODUCTS_DIR}/*.md')
     for md_file in md_files:
         pdf_file = md_file.replace('.md', '.pdf')
@@ -36,7 +36,7 @@ def ensure_pdfs(dry_run=False):
                     print(f"Failed to generate {pdf_file}: {e}")
 
 def get_text(msg):
-    \"\"\"Extract plain text from email.\"\"\"
+    """Extract plain text from email."""
     if msg.is_multipart():
         for part in msg.walk():
             content_type = part.get_content_type()
@@ -64,7 +64,7 @@ def get_text(msg):
     return ''
 
 def extract_buyer_email(text):
-    \"\"\"Extract buyer email from PayPal notification text.\"\"\"
+    """Extract buyer email from PayPal notification text."""
     patterns = [
         r'Email address[:\\s]*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})',
         r'Email[:\\s]*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})',
@@ -82,14 +82,14 @@ def extract_buyer_email(text):
     return None
 
 def get_product_files():
-    \"\"\"Get list of product files (MD and PDF).\"\"\"
+    """Get list of product files (MD and PDF)."""
     files = []
     files.extend(glob.glob(f'{PRODUCTS_DIR}/*.md'))
     files.extend(glob.glob(f'{PRODUCTS_DIR}/*.pdf'))
     return [f for f in files if os.path.isfile(f)]
 
 def send_delivery_email(buyer_email, dry_run=False):
-    \"\"\"Send products to buyer.\"\"\"
+    """Send products to buyer."""
     msg = MIMEMultipart()
     msg['From'] = GMAIL_USER
     msg['To'] = buyer_email
@@ -141,7 +141,7 @@ glyphjohnson@gmail.com'''
         return False
 
 def poll_gmail(dry_run=False):
-    \"\"\"Poll Gmail for new PayPal payment notifications.\"\"\"
+    """Poll Gmail for new PayPal payment notifications."""
     if not dry_run:
         ensure_pdfs(dry_run)
     try:
