@@ -1,8 +1,1 @@
-# Lokke Customer Service Pack
-**20+ Prompts for FAQs, Responses, Support Scripts**
-
-**Equivalent to 12 Pages**
-
-*(Base 10 CS, expand: complaint handling, refund emails, chat replies, personalization, escalation, product troubleshooting, 20+.)*
-
-Similar pro format.
+# Customer Service Prompt Pack\n\n## Intro\n20+ prompts for FAQs, responses, complaints, refunds, chatbots. Scale CS without team.\n\n## Best Practices\nUse role as empathetic expert, CoT for de-escalation, structured output.\n\n## Prompts\n1. FAQ Answer: \"You are CS manager. Answer [question] for [product], short, helpful, upsell subtle.\"\n\n[expand to 20 like copy-pack]\n\n## Optimized Example (2026)\nUse XML template from prompt-best-practices.md
