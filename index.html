@@ -78,7 +78,7 @@
             padding: 2rem 1.25rem;
         }
         .btn {
-            display: inline-flex;
+            display: block;
             align-items: center;
             justify-content: center;
             padding: 1.125rem 2.25rem;
@@ -94,7 +94,8 @@
             line-height: 1.4;
             min-height: 3.125rem;
             box-shadow: 0 4px 20px rgba(59,130,246,0.3);
-            margin-top: 1rem;
+            width: fit-content;
+            margin: 1rem auto 0;
             position: relative;
             overflow: hidden;
         }
@@ -318,10 +319,13 @@
         }
             .grid-cell {
             text-align: center;
+            align-items: center;
             justify-content: center;
             flex-direction: column;
             display: flex;
         }
+
+.grid-cell * { text-align: center; }
 
 .card { text-align: center; }
 </style>
