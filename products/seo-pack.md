@@ -8,7 +8,7 @@
 
 ---
 
-![Lokke SEO Mega Banner](https://via.placeholder.com/1200x400/28A745/FFFFFF?text=Lokke.ai+SEO+Pack+-+50%2B+Ecom+Prompts)
+
 
 # Table of Contents
 - [Velkommen / Welcome](#welcome)
