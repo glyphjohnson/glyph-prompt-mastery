@@ -1,1 +1,94 @@
-...
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Sub-Agent Dashboard - Glyph Johnson&lt;/title&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;style&gt;
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%); color: white; margin: 0; padding: 2rem; min-height: 100vh; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { text-align: center; color: #3b82f6; }
+    .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 1rem; padding: 1.5rem; }
+    .card h2 { margin: 0 0 1rem; color: #3b82f6; }
+    .status { font-weight: 600; padding: 0.5rem 1rem; border-radius: 0.5rem; display: inline-block; margin-bottom: 1rem; }
+    .active { background: #10b981; }
+    .idle { background: #f59e0b; }
+    .feed { height: 300px; overflow-y: auto; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 0.5rem; font-size: 0.9rem; }
+    .feed-item { margin-bottom: 0.5rem; padding: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 0.5rem; }
+    .revenue { font-size: 1.2rem; font-weight: 700; color: #10b981; }
+    @media (max-width: 768px) { .dashboard-grid { grid-template-columns: 1fr; } }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;💼 Sub-Agent Dashboard&lt;/h1&gt;
+    &lt;p style=&quot;text-align: center; opacity: 0.8;&quot;&gt;Live status for revenue-generating subs. Refresh for updates.&lt;/p&gt;
+    &lt;div id=&quot;dashboard-grid&quot; class=&quot;dashboard-grid&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    const REPO = 'glyphjohnson/glyph-prompt-mastery';
+    const LABELS = {
+      organisk: 'sub-organisk',
+      outreach: 'sub-outreach',
+      community: 'sub-community'
+    };
+    const SUBS = {
+      organisk: { name: 'Organisk Trafik', desc: 'Reddit/HN/SEO posts', potential: 'High - 100+ visitors/day' },
+      outreach: { name: 'Direct Outreach', desc: 'DMs to ecom owners', potential: 'Medium - 1-5 sales direct' },
+      community: { name: 'Community Acquisition', desc: 'Discord/Reddit shares', potential: 'High - viral shares' }
+    };
+
+    async function fetchIssues(label) {
+      try {
+        const res = await fetch(`https://api.github.com/repos/${REPO}/issues?labels=${label}&amp;sort=created&amp;direction=desc&amp;per_page=10`);
+        const data = await res.json();
+        return data;
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function renderFeed(issues) {
+      if (!issues.length) return '&lt;p&gt;No activity yet. Sub idle.&lt;/p&gt;';
+      return issues.map(issue =&gt; 
+        `&lt;div class=&quot;feed-item&quot;&gt;
+          &lt;strong&gt;${new Date(issue.created_at).toLocaleString()}&lt;/strong&gt;: ${issue.title}
+          &lt;br&gt;&lt;small&gt;${issue.state} - ${issue.comments} comments&lt;/small&gt;
+        &lt;/div&gt;`
+      ).join('');
+    }
+
+    function renderCard(key) {
+      const sub = SUBS[key];
+      const statusEl = document.createElement('div');
+      statusEl.className = 'status idle';
+      statusEl.textContent = 'Loading...';
+      return `
+        &lt;div class=&quot;card&quot;&gt;
+          &lt;h2&gt;${sub.name}&lt;/h2&gt;
+          &lt;p&gt;${sub.desc}&lt;/p&gt;
+          &lt;div class=&quot;status idle&quot; id=&quot;status-${key}&quot;&gt;Loading...&lt;/div&gt;
+          &lt;div class=&quot;revenue&quot;&gt;Potential: ${sub.potential}&lt;/div&gt;
+          &lt;div class=&quot;feed&quot; id=&quot;feed-${key}&quot;&gt;Loading feed...&lt;/div&gt;
+        &lt;/div&gt;
+      `;
+    }
+
+    async function updateDashboard() {
+      for (let key of Object.keys(SUBS)) {
+        const issues = await fetchIssues(LABELS[key]);
+        const status = issues.length ? 'active' : 'idle';
+        document.getElementById(`status-${key}`).textContent = status.toUpperCase();
+        document.getElementById(`status-${key}`).className = `status ${status}`;
+        document.getElementById(`feed-${key}`).innerHTML = renderFeed(issues);
+      }
+    }
+
+    document.getElementById('dashboard-grid').innerHTML = Object.keys(SUBS).map(renderCard).join('');
+    updateDashboard();
+    setInterval(updateDashboard, 30000); // Update every 30s
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
