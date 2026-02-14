@@ -193,6 +193,47 @@
             .card {
                 padding: 1.5rem;
             }
+            .hero {
+                padding: 3rem 1rem 2rem;
+            }
+            .btn {
+                width: 100%;
+                max-width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            .prompt-sample {
+                font-size: 0.8rem;
+                padding: 1rem;
+            }
+            .price {
+                font-size: 2rem;
+            }
+        }
+        .paypal-test {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .paypal-test .btn {
+            background: var(--accent-blue-dark);
+            font-size: 0.95rem;
+        }
+        .pro-teaser {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .price span {
+            font-size: 0.6em;
+            opacity: 0.8;
+            vertical-align: super;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -217,11 +258,40 @@
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="boyisak@gmail.com">
-                    <input type="hidden" name="item_name" value="Glyph Mega Pack">
-                    <input type="hidden" name="amount" value="12.99">
+                    <input type="hidden" name="item_name" value="Upsell Pack">
+                    <input type="hidden" name="amount" value="9.99">
                     <input type="hidden" name="currency_code" value="USD">
-                    <input type="submit" value="Buy Mega Pack" class="btn">
+                    <input type="submit" value="Buy Upsell Pack $9.99" class="btn">
                 </form>
+                <div class="paypal-test">
+                  <p style="margin-bottom: 0.5rem; font-size: 0.875rem;"><strong>🧪 Test PayPal Flow</strong><br><small>Sandbox - $0.01 (demo purchase)</small></p>
+                  <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="boyisak@gmail.com">
+                    <input type="hidden" name="item_name" value="TEST Upsell Pack">
+                    <input type="hidden" name="amount" value="0.01">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" value="Test Flow $0.01" class="btn">
+                  </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="pro-teaser">
+            <div class="container">
+                <h2>🔥 Pro Teaser – Level Up</h2>
+                <p>Unlimited mastery: custom prompts, new drops, VIP support. Launching soon.</p>
+                <div class="card">
+                    <h3>Pro Membership</h3>
+                    <div class="price">$19.99<span>/mo</span></div>
+                    <ul>
+                        <li>Custom AI prompt engineering</li>
+                        <li>Monthly exclusive packs</li>
+                        <li>Direct glyph support</li>
+                        <li>Member dashboard</li>
+                    </ul>
+                    <a href="mailto:glyphjohnson@gmail.com?subject=Pro+Waitlist+Glyph+Prompt+Mastery&amp;body=Interested%20in%20Pro!%20Details..." class="btn">Notify Me</a>
+                </div>
             </div>
         </section>
         <section class="container">
