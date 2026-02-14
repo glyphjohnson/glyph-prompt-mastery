@@ -59,7 +59,8 @@
         blockquote {
             font-style: italic;
             margin-bottom: 1rem;
-            font-size: 1.1rem;
+            font-weight: 600;
+            font-size: 0.875rem;
         }
         .container {
             max-width: 1200px;
@@ -78,6 +79,11 @@
             text-align: center;
             padding: 2rem 1.25rem;
             background: radial-gradient(circle at 20% 80%, rgba(59,130,246,0.1) 0%, transparent 50%), linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .hero p {
+            max-width: 90%;
+            margin: 0 auto;
         }
         .btn {
             display: inline-flex;
@@ -151,16 +157,17 @@
         }
         ul li {
             padding: 0.5rem 0;
-            position: relative;
-            padding-left: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         ul li::before {
             content: "✨";
             color: var(--gold);
             font-weight: bold;
-            position: absolute;
-            left: 0;
             font-size: 1.2rem;
+            margin-right: 0.5rem;
+            flex-shrink: 0;
         }
         .prompt-sample {
             background: var(--bg-primary);
@@ -222,6 +229,10 @@
         }
         nav a:hover {
             color: var(--accent-blue);
+        }
+
+        nav ul li::before {
+            content: none;
         }
         footer {
             text-align: center;
