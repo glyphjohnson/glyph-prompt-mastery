@@ -1,0 +1,486 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Glyph Prompt Mastery | Precision AI Prompts for Ecom Growth&lt;/title&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;500+ Engineered AI Prompts proven on live stores. SEO 3x traffic, copy 4x conversions, upsells +30% AOV, CS automation. Scale now.&quot;&gt;
+    &lt;style&gt;
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --border: #404040;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: &apos;Inter&apos;, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            hyphens: auto;
+        }
+        blockquote {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            hyphens: auto;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        /* Hero, products, testimonials grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1.25rem;
+        }
+        .grid-hero {
+            grid-column: 1 / -1;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            padding: 4rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 1;
+            transform: none;
+            animation: none;
+        }
+        .grid-cell {
+            background: var(--bg-secondary);
+            border-radius: 1rem;
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            opacity: 1;
+            transform: none;
+            animation: none;
+        }
+        .main-grid &gt; .grid-cell:nth-child(2) { animation-delay: 0.3s; }
+        .main-grid &gt; .grid-cell:nth-child(3) { animation-delay: 0.45s; }
+        .main-grid &gt; .grid-cell:nth-child(4) { animation-delay: 0.6s; }
+        .main-grid &gt; .grid-cell:nth-child(5) { animation-delay: 0.75s; }
+        .main-grid &gt; .grid-cell:nth-child(6) { animation-delay: 0.9s; }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: var(--accent-blue);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: var(--accent-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59,130,246,0.3);
+        }
+        .card {
+            /* legacy, but grid-cell now */
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin: 1rem 0;
+        }
+        .price span {
+            font-size: 0.6em;
+            opacity: 0.8;
+            vertical-align: super;
+            font-weight: normal;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        ul li {
+            padding: 0.25rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        ul li::before {
+            content: &quot;✓&quot;;
+            color: var(--accent-blue);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .prompt-sample {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            font-family: &apos;Monaco&apos;, &apos;Menlo&apos;, monospace;
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        details {
+            margin-bottom: 1rem;
+        }
+        summary {
+            cursor: pointer;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .faq-answer {
+            padding: 1rem 1rem 1.25rem;
+            background: var(--bg-primary);
+            border-radius: 0 0 0.5rem 0.5rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            hyphens: auto;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 10;
+        }
+        nav {
+            padding: 1rem 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        form {
+            margin-top: 1rem;
+        }
+        form input[type=&quot;submit&quot;] {
+            width: 100%;
+            padding: 0.875rem;
+            font-size: 1rem;
+            border: none;
+        }
+        /* Sticky Buy Button */
+        #sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            background: rgba(42, 42, 42, 0.98);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            padding: 1rem;
+            text-align: center;
+            z-index: 100;
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 -4px 20px rgba(0,0,0, 0.4);
+        }
+        #sticky-cta.show {
+            transform: translateY(0);
+        }
+        #sticky-cta p {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        #sticky-cta .btn {
+            display: block;
+            max-width: 320px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            padding: 1rem 1.5rem;
+        }
+        @media (min-width: 769px) {
+            #sticky-cta {
+                padding: 1.25rem 5%;
+            }
+            #sticky-cta .btn {
+                max-width: 280px;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            /* Grid mobile stack */
+            .main-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 1rem auto;
+                padding: 0 1rem;
+            }
+            .grid-hero {
+                padding: 3rem 1.5rem;
+            }
+            .grid-cell {
+                padding: 2rem 1.5rem;
+            }
+            .btn {
+                width: 100%;
+            }
+            input[type=&quot;email&quot;] {
+                font-size: 16px;
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+            }
+            #sticky-cta .btn {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;container&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#products&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;Founder&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;seo.html&quot;&gt;SEO&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;copy.html&quot;&gt;Copy&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;upsell.html&quot;&gt;Upsell&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;cs.html&quot;&gt;CS&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;main-grid&quot; id=&quot;main-grid&quot;&gt;
+            &lt;div class=&quot;grid-hero&quot;&gt;
+                &lt;h1&gt;Glyph Prompt Mastery: 500+ AI Prompts for 10x Ecom Growth&lt;/h1&gt;
+                &lt;p&gt;500+ engineered prompts proven on live stores: SEO traffic explodes 3x+, copy converts 2-5x better, upsells boost AOV 25-40%, CS automates 80% of tickets. Copy-paste → results. No guesswork.&lt;/p&gt;
+                &lt;a href=&quot;#products&quot; class=&quot;btn&quot;&gt;Unlock Packs Now&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot;&gt;
+                &lt;div style=&quot;color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;&quot;&gt;★★★★★&lt;/div&gt;
+                &lt;blockquote&gt;&quot;SEO prompts tripled my Etsy traffic (1.2k → 4.1k/mo). Sales +210%! No ad budget needed.&quot;&lt;/blockquote&gt;
+                &lt;strong&gt;— Sarah K.&lt;br&gt;&lt;small&gt;Etsy Powerhouse, $58k/mo&lt;/small&gt;&lt;/strong&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot;&gt;
+                &lt;div style=&quot;color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;&quot;&gt;★★★★★&lt;/div&gt;
+                &lt;blockquote&gt;&quot;Copy prompts: PDPs now convert 4.2x better, AOV up 41%. Traffic-to-profit machine.&quot;&lt;/blockquote&gt;
+                &lt;strong&gt;— Mike R.&lt;br&gt;&lt;small&gt;Shopify DTC Brand&lt;/small&gt;&lt;/strong&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot;&gt;
+                &lt;div style=&quot;color: #fbbf24; font-size: 1.6em; margin-bottom: 1rem; text-align: center;&quot;&gt;★★★★★&lt;/div&gt;
+                &lt;blockquote&gt;&quot;Upsell prompts = $16k/mo added revenue. 32% AOV lift on every order. Scalable gold.&quot;&lt;/blockquote&gt;
+                &lt;strong&gt;— Alex T.&lt;br&gt;&lt;small&gt;7-Figure Ecom&lt;/small&gt;&lt;/strong&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot; id=&quot;products&quot;&gt;
+                &lt;h3&gt;Starter Pack&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;$10&lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;100+ SEO Mastery Prompts&lt;/li&gt;
+                    &lt;li&gt;50+ Copywriting Killers&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_top&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_xclick&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;business&quot; value=&quot;boyisak@gmail.com&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;item_name&quot; value=&quot;Glyph Starter Pack&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;amount&quot; value=&quot;10.00&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot;Buy Starter ($10)&quot; class=&quot;btn&quot;&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot;&gt;
+                &lt;h3&gt;Mega Pack (Most Popular)&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;$12.99&lt;/div&gt;
+                &lt;p&gt;Everything: 500+ prompts. Instant PDF, lifetime access/updates.&lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;SEO Traffic Explosion&lt;/li&gt;
+                    &lt;li&gt;Copy Conversion Boost&lt;/li&gt;
+                    &lt;li&gt;Upsell Revenue Stack&lt;/li&gt;
+                    &lt;li&gt;CS Automation&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_top&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_xclick&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;business&quot; value=&quot;boyisak@gmail.com&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;item_name&quot; value=&quot;Glyph Mega Pack&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;amount&quot; value=&quot;12.99&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot;Buy Mega Pack ($12.99)&quot; class=&quot;btn&quot;&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-cell&quot;&gt;
+                &lt;h3&gt;Pro Pack&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;$19.99&lt;span&gt;/mo&lt;/span&gt;&lt;/div&gt;
+                &lt;p&gt;Coming soon: Advanced prompts, custom engineering, VIP support, exclusive dashboard.&lt;/p&gt;
+                &lt;form id=&quot;pro-waitlist&quot;&gt;
+                    &lt;input type=&quot;email&quot; id=&quot;pro-email&quot; name=&quot;email&quot; placeholder=&quot;Enter your email for Pro updates&quot; required&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Join Waitlist Free&lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;faq container&quot;&gt;
+            &lt;h2&gt;FAQ&lt;/h2&gt;
+            &lt;details&gt;
+                &lt;summary&gt;What AIs are compatible?&lt;/summary&gt;
+                &lt;div class=&quot;faq-answer&quot;&gt;ChatGPT (3.5/4o), Claude 3.5, Grok, Gemini—plug &amp;amp; play.&lt;/div&gt;
+            &lt;/details&gt;
+            &lt;details&gt;
+                &lt;summary&gt;How&apos;s delivery work?&lt;/summary&gt;
+                &lt;div class=&quot;faq-answer&quot;&gt;Instant PDF + TXT to email post-PayPal. Download anytime.&lt;/div&gt;
+            &lt;/details&gt;
+            &lt;details&gt;
+                &lt;summary&gt;Refunds?&lt;/summary&gt;
+                &lt;div class=&quot;faq-answer&quot;&gt;30 days, no hassle. Try risk-free.&lt;/div&gt;
+            &lt;/details&gt;
+            &lt;details&gt;
+                &lt;summary&gt;Lifetime updates?&lt;/summary&gt;
+                &lt;div class=&quot;faq-answer&quot;&gt;Yes—new prompts added free forever.&lt;/div&gt;
+            &lt;/details&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cta container&quot;&gt;
+            &lt;h2&gt;Ready to 10x Your Store?&lt;/h2&gt;
+            &lt;p&gt;Engineered for results. Deploy today, scale tomorrow.&lt;/p&gt;
+            &lt;a href=&quot;#products&quot; class=&quot;btn&quot;&gt;Get Mega Pack Now&lt;/a&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;div id=&quot;sticky-cta&quot;&gt;
+        &lt;p&gt;🚀 Most Popular Choice&lt;/p&gt;
+        &lt;a href=&quot;#products&quot; class=&quot;btn&quot;&gt;Buy Mega Pack $12.99 → Instant Access&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;footer class=&quot;container&quot;&gt;
+        &lt;p&gt;&amp;copy; 2026 Glyph Prompt Mastery. Passion-built for ecom warriors.&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+        document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
+            // Sticky CTA
+            const stickyCta = document.getElementById(&apos;sticky-cta&apos;);
+            let ticking = false;
+            function updateSticky() {
+                if (window.scrollY &gt; window.innerHeight * 0.3) {
+                    stickyCta.classList.add(&apos;show&apos;);
+                } else {
+                    stickyCta.classList.remove(&apos;show&apos;);
+                }
+                ticking = false;
+            }
+            window.addEventListener(&apos;scroll&apos;, function() {
+                if (!ticking) {
+                    requestAnimationFrame(updateSticky);
+                    ticking = true;
+                }
+            });
+
+            // Pro Waitlist Form
+            const proForm = document.getElementById(&apos;pro-waitlist&apos;);
+            if (proForm) {
+                proForm.addEventListener(&apos;submit&apos;, function(e) {
+                    e.preventDefault();
+                    const email = document.getElementById(&apos;pro-email&apos;).value.trim();
+                    if (!email || !email.includes(&apos;@&apos;) || !email.includes(&apos;.&apos;)) {
+                        alert(&apos;Please enter a valid email address.&apos;);
+                        return;
+                    }
+                    const subject = encodeURIComponent(&apos;Glyph Prompt Mastery - Pro Waitlist Signup&apos;);
+                    const body = encodeURIComponent(`Email: ${email}\n\nReady for Pro Pack updates and early access!`);
+                    window.location.href = `mailto:glyphjohnson@gmail.com?subject=${subject}&amp;body=${body}`;
+                    proForm.reset();
+                });
+            }
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;

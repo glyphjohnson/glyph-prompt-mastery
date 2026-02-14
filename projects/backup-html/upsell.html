@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsell | Glyph Prompt Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="20+ Prompts for upsells, emails, cross-sells. Maximize LTV.">
+    <style>
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --border: #404040;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1.25rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: var(--accent-blue);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background: var(--accent-blue-dark);
+        }
+        .card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin: 1rem 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        ul li {
+            padding: 0.25rem 0;
+        }
+        .prompt-sample {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        details {
+            margin-bottom: 1rem;
+        }
+        summary {
+            cursor: pointer;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .faq-answer {
+            padding: 1rem 1rem 1.25rem;
+            background: var(--bg-primary);
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+        .prompt-answer {
+            padding: 1rem 1rem 1.25rem;
+            background: var(--bg-primary);
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 26, 26, 0.95);
+            border-bottom: 1px solid var(--border);
+            z-index: 10;
+        }
+        nav {
+            padding: 1rem 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        form {
+            margin-top: 1rem;
+        }
+        form input[type="submit"] {
+            width: 100%;
+            padding: 0.875rem;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .hero {
+                padding: 3rem 1rem 2rem;
+            }
+            .btn {
+                width: 100%;
+                max-width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            .prompt-sample {
+                font-size: 0.8rem;
+                padding: 1rem;
+            }
+            .price {
+                font-size: 2rem;
+            }
+        }
+        .paypal-test {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .paypal-test .btn {
+            background: var(--accent-blue-dark);
+            font-size: 0.95rem;
+        }
+        .pro-teaser {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .price span {
+            font-size: 0.6em;
+            opacity: 0.8;
+            vertical-align: super;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Founder</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li><a href="copy.html">Copy</a></li>
+                <li><a href="upsell.html">Upsell</a></li>
+                <li><a href="cs.html">CS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Upsell Mastery</h1>
+                <p>Abandoned cart, post-purchase upsells, newsletters—extract max value from every customer.</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="boyisak@gmail.com">
+                    <input type="hidden" name="item_name" value="Upsell Pack">
+                    <input type="hidden" name="amount" value="9.99">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" value="Buy Upsell Pack $9.99" class="btn">
+                </form>
+                <div class="paypal-test">
+                  <p style="margin-bottom: 0.5rem; font-size: 0.875rem;"><strong>🧪 Test PayPal Flow</strong><br><small>Sandbox - $0.01 (demo purchase)</small></p>
+                  <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="boyisak@gmail.com">
+                    <input type="hidden" name="item_name" value="TEST Upsell Pack">
+                    <input type="hidden" name="amount" value="0.01">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" value="Test Flow $0.01" class="btn">
+                  </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="pro-teaser">
+            <div class="container">
+                <h2>🔥 Pro Teaser – Level Up</h2>
+                <p>Unlimited mastery: custom prompts, new drops, VIP support. Launching soon.</p>
+                <div class="card">
+                    <h3>Pro Membership</h3>
+                    <div class="price">$19.99<span>/mo</span></div>
+                    <ul>
+                        <li>Custom AI prompt engineering</li>
+                        <li>Monthly exclusive packs</li>
+                        <li>Direct glyph support</li>
+                        <li>Member dashboard</li>
+                    </ul>
+                    <a href="mailto:glyphjohnson@gmail.com?subject=Pro+Waitlist+Glyph+Prompt+Mastery&amp;body=Interested%20in%20Pro!%20Details..." class="btn">Notify Me</a>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Upsell Prompts</h2>
+            <details>
+                <summary>Abandoned Cart Email</summary>
+                <div class="prompt-answer">
+                    <div class="prompt-sample">"Write an abandoned cart email for [PRODUCT], urgency, discount [OFFER]..."</div>
+                </div>
+            </details>
+            <details>
+                <summary>Post-Purchase Upsell</summary>
+                <div class="prompt-answer">
+                    <div class="prompt-sample">"Generate one-click upsell page copy for [COMPLEMENTARY PRODUCT]..."</div>
+                </div>
+            </details>
+            <div class="card">
+                <h3>Full Pack</h3>
+                <p>20+ upsell prompts + all categories.</p>
+                <form><!-- buy mega --></form>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p>&copy; 2026 Glyph Prompt Mastery. Crafted with passion.</p>
+    </footer>
+</body>
+</html>
